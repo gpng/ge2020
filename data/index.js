@@ -841,6 +841,11 @@ export const ED_DATA = [
         members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: false,
       },
+      {
+        party: PARTIES.PV.id,
+        members: [],
+        confirmed: false,
+      },
     ],
   },
   {
@@ -1319,6 +1324,11 @@ export const ED_DATA = [
         members: [],
         confirmed: false,
       },
+      {
+        party: PARTIES.PV.id,
+        members: [],
+        confirmed: false,
+      },
     ],
   },
   {
@@ -1419,11 +1429,6 @@ export const ED_DATA = [
           PROFILES.RDU.NICHOLAS_TANG,
         ],
         confirmed: true,
-      },
-      {
-        party: PARTIES.PV.id,
-        members: [],
-        confirmed: false,
       },
     ],
   },
