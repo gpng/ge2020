@@ -95,7 +95,7 @@ const VirusMarker = ({ x, y, id }) => {
           pointer-events: auto;
           box-shadow: 0px 3px 6px #00000029;
           border-radius: 5px;
-          transform: translate(-50%, calc(-100% - 12px));
+          transform: translate(-50%, calc(-100% - 0.75rem));
           background: ${COLORS.BACKGROUND_PRIMARY};
           position: absolute;
           top: ${y}px;
@@ -104,6 +104,7 @@ const VirusMarker = ({ x, y, id }) => {
           border: none;
           text-align: left;
           padding: 0.5rem;
+          min-width: 9rem;
         }
 
         .name {
