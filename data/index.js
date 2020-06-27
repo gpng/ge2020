@@ -1405,7 +1405,6 @@ export const ED_DATA = [
         PROFILES.PAP.ANG_WEI_NENG,
         PROFILES.PAP.RAHAYU_MAHZAM,
         PROFILES.PAP.TAN_WU_MENG,
-        PROFILES.PAP.IVAN_LIM,
       ],
       confirmed: false,
     },
