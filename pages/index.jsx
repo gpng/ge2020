@@ -114,7 +114,8 @@ const Index = () => {
             'rgba(0, 0, 0, 0.1)',
           ],
           'fill-outline-color': 'rgba(0, 0, 0, 1)',
-          'fill-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.4, 0],
+          'fill-opacity': 0.4,
+          // 'fill-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.4, 0],
         },
       });
       // layer for line
@@ -130,7 +131,8 @@ const Index = () => {
             'rgba(0, 0, 0, 0)',
           ],
           'line-width': 4,
-          'line-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.6, 0],
+          'line-opacity': 0.6,
+          // 'line-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.6, 0],
         },
       });
     }
@@ -174,14 +176,18 @@ const Index = () => {
     const party = ev.target.value;
     const showAll = party === 'all';
     ED_DATA.forEach((x) => {
+      const isVisible =
+        showAll || x.current.party === party || x.opposition.some((o) => o.party === party);
       map.setFeatureState(
         {
           source: sourceId,
           id: x.featureId,
         },
         {
-          visible:
-            showAll || x.current.party === party || x.opposition.some((o) => o.party === party),
+          fillColor: isVisible ? PARTY_COLORS[x.current.party] : 'rgba(0, 0, 0, 0)',
+          outlineColor:
+            isVisible && x.opposition?.length > 0 ? PARTY_COLORS[x.opposition[0].party] : null,
+          visible: isVisible,
         },
       );
     });
