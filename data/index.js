@@ -788,6 +788,7 @@ export const ED_DATA = [
           PROFILES.PSP.TERENCE_SOON,
           PROFILES.PSP.ABAS_BIN_KASMANI,
         ],
+        confirmed: true,
       },
     ],
   },
@@ -839,7 +840,7 @@ export const ED_DATA = [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.LIM_CHER_HONG],
-        confirmed: false,
+        confirmed: true,
       },
       {
         party: PARTIES.PV.id,
@@ -886,6 +887,7 @@ export const ED_DATA = [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.ANG_YONG_GUAN],
+        confirmed: true,
       },
     ],
   },
@@ -976,6 +978,7 @@ export const ED_DATA = [
           PROFILES.PSP.LEON_MUN_WAI,
           PROFILES.PSP.NADARAJAH_LOGANATHAN,
         ],
+        confirmed: true,
       },
     ],
   },
@@ -1254,7 +1257,7 @@ export const ED_DATA = [
           PROFILES.PSP.SRI_NALLAKARUPPAN,
           PROFILES.PSP.BRADLEY_BOWYER,
         ],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
@@ -1390,6 +1393,7 @@ export const ED_DATA = [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.GIGENE_WONG],
+        confirmed: true,
       },
     ],
   },
@@ -1572,6 +1576,7 @@ export const ED_DATA = [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.KUMARAN_PILLAI],
+        confirmed: true,
       },
     ],
   },
