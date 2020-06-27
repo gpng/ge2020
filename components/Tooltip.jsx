@@ -100,7 +100,7 @@ const VirusMarker = ({ x, y, id }) => {
           position: absolute;
           top: ${y}px;
           left: ${x}px;
-          z-index: 1;
+          z-index: 2;
           border: none;
           text-align: left;
           padding: 0.5rem;
