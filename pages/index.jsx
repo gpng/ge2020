@@ -4,6 +4,7 @@ import ReactMapGL, {
   WebMercatorViewport,
   FlyToInterpolator,
   TRANSITION_EVENTS,
+  NavigationControl,
 } from 'react-map-gl';
 import Head from 'next/head';
 import orderBy from 'lodash/orderBy';
@@ -292,6 +293,9 @@ const Index = () => {
                 </select>
               </div>
             </div>
+            <div className="navigation">
+              <NavigationControl onViewportChange={setViewport} showCompass={false} captureClick />
+            </div>
           </ReactMapGL>
         </div>
         <style jsx>
@@ -321,6 +325,13 @@ const Index = () => {
 
             .ed-select-container {
               margin-top: 1rem;
+            }
+
+            .navigation {
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              z-index: 1;
             }
           `}
         </style>
