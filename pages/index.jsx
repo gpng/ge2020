@@ -5,12 +5,14 @@ import ReactMapGL, {
   FlyToInterpolator,
   TRANSITION_EVENTS,
 } from 'react-map-gl';
+import Head from 'next/head';
 import orderBy from 'lodash/orderBy';
 import flattenDepth from 'lodash/flattenDepth';
 // components
 import Tooltip from '../components/Tooltip';
 // constants
 import { MAPBOX_STYLE, MAPBOX_TOKEN } from '../constants';
+import META from '../constants/meta';
 // data
 import { ED_DATA, PARTIES } from '../data';
 import boundaryGeojson from '../data/boundaries.json';
@@ -219,83 +221,111 @@ const Index = () => {
   };
 
   return (
-    <div className="root">
-      {/* <div className="panel">
+    <>
+      {' '}
+      <Head>
+        <title>{META.TITLE}</title>
+        {/* title */}
+        <meta property="og:title" key="og-title" content={META.TITLE} />
+        <meta name="twitter:title" key="twitter-title" content={META.TITLE} />
+        {/* descriptions */}
+        <meta name="description" key="description" content={META.DESCRIPTION} />
+        <meta property="og:description" key="og-description" content={META.DESCRIPTION} />
+        <meta name="twitter:description" key="twitter-description" content={META.DESCRIPTION} />
+        {/* url */}
+        <meta property="og:url" key="og-url" content={META.URL} />
+        <meta name="twitter:url" key="twitter-url" content={META.URL} />
+        {/* image */}
+        {/* <meta property="og:image" content="/static/images/social.png" />
+    <meta name="twitter:image" content="/static/images/social.png" /> */}
+        {/* twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta property="og:type" key="og-type" content="website" />
+
+        <meta name="robots" key="robots" content="index, follow" />
+        {/* <link rel="icon" type="image/png" href="/static/images/favicon.png" /> */}
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+      </Head>
+      <div className="root">
+        {/* <div className="panel">
         <h1>{t('index.title')}</h1>
       </div> */}
-      <div className="map">
-        <ReactMapGL
-          {...viewport}
-          width="100%"
-          height="100%"
-          onViewportChange={setViewport}
-          mapboxApiAccessToken={MAPBOX_TOKEN}
-          mapStyle={MAPBOX_STYLE}
-          ref={(ref) => {
-            mapRef.current = ref?.getMap?.();
-          }}
-          onLoad={() => {
-            handleMapLoad();
-            fitMapToBounds(initialBbox);
-          }}
-          onHover={handleHover}
-          onClick={handleClick}
-          onTouchMove={() => setHovered(null)}
-        >
-          {hovered && <Tooltip id={hovered?.id} x={hovered?.x} y={hovered?.y} />}
-          <div className="select-containers">
-            <div className="party-select-container">
-              <select className="party-select" onChange={handlePartyChange}>
-                <option value="all">All Parties</option>
-                {orderBy(Object.values(PARTIES), 'name').map((x) => (
-                  <option key={x.id} value={x.id}>{`${x.name} (${x.id})`}</option>
-                ))}
-              </select>
+        <div className="map">
+          <ReactMapGL
+            {...viewport}
+            width="100%"
+            height="100%"
+            onViewportChange={setViewport}
+            mapboxApiAccessToken={MAPBOX_TOKEN}
+            mapStyle={MAPBOX_STYLE}
+            ref={(ref) => {
+              mapRef.current = ref?.getMap?.();
+            }}
+            onLoad={() => {
+              handleMapLoad();
+              fitMapToBounds(initialBbox);
+            }}
+            onHover={handleHover}
+            onClick={handleClick}
+            onTouchMove={() => setHovered(null)}
+          >
+            {hovered && <Tooltip id={hovered?.id} x={hovered?.x} y={hovered?.y} />}
+            <div className="select-containers">
+              <div className="party-select-container">
+                <select className="party-select" onChange={handlePartyChange}>
+                  <option value="all">All Parties</option>
+                  {orderBy(Object.values(PARTIES), 'name').map((x) => (
+                    <option key={x.id} value={x.id}>{`${x.name} (${x.id})`}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="ed-select-container">
+                <select className="ed-select" onChange={handleEdChange} value={selectedEd}>
+                  <option value="all">Select a electoral district</option>
+                  {orderBy(ED_DATA, 'name').map((x) => (
+                    <option key={x.id} value={x.id}>
+                      {x.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
-            <div className="ed-select-container">
-              <select className="ed-select" onChange={handleEdChange} value={selectedEd}>
-                <option value="all">Select a electoral district</option>
-                {orderBy(ED_DATA, 'name').map((x) => (
-                  <option key={x.id} value={x.id}>
-                    {x.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-        </ReactMapGL>
+          </ReactMapGL>
+        </div>
+        <style jsx>
+          {`
+            .root {
+              height: 100%;
+              width: 100vw;
+              overflow: hidden;
+              display: flex;
+            }
+
+            .panel {
+              flex: 0 0 300px;
+              box-shadow: 0px 8px 6px #00000029;
+            }
+
+            .map {
+              flex: 1 1 auto;
+            }
+
+            .select-containers {
+              position: fixed;
+              top: 1rem;
+              left: 1rem;
+              z-index: 1;
+            }
+
+            .ed-select-container {
+              margin-top: 1rem;
+            }
+          `}
+        </style>
       </div>
-      <style jsx>
-        {`
-          .root {
-            height: 100%;
-            width: 100vw;
-            overflow: hidden;
-            display: flex;
-          }
-
-          .panel {
-            flex: 0 0 300px;
-            box-shadow: 0px 8px 6px #00000029;
-          }
-
-          .map {
-            flex: 1 1 auto;
-          }
-
-          .select-containers {
-            position: fixed;
-            top: 1rem;
-            left: 1rem;
-            z-index: 1;
-          }
-
-          .ed-select-container {
-            margin-top: 1rem;
-          }
-        `}
-      </style>
-    </div>
+    </>
   );
 };
 
