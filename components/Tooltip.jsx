@@ -143,6 +143,19 @@ const VirusMarker = ({ x, y, id }) => {
           color: red;
           font-size: 0.6rem;
         }
+
+        @media only screen and (max-width: 600px) {
+          .tooltip-root {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: calc(100vw - 1rem);
+          }
+
+          .profiles {
+            flex-wrap: wrap;
+          }
+        }
       `}</style>
     </button>
   );

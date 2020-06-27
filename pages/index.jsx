@@ -132,6 +132,22 @@ const Index = () => {
   };
 
   const handleHover = (ev) => {
+    if (ev?.pointerType === 'touch') {
+      return;
+    }
+    const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
+    if (!ed?.properties?.id) {
+      setHovered(null);
+    }
+    setHovered({
+      id: ed?.properties?.id,
+      x: ev.point[0],
+      y: ev.point[1],
+    });
+  };
+
+  const handleClick = (ev) => {
+    if (ev?.pointerType !== 'touch') return;
     const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
     if (!ed?.properties?.id) {
       setHovered(null);
@@ -164,6 +180,8 @@ const Index = () => {
             fitMapToBounds(initialBbox);
           }}
           onHover={handleHover}
+          onClick={handleClick}
+          onTouchMove={() => setHovered(null)}
         >
           {hovered && <Tooltip id={hovered?.id} x={hovered?.x} y={hovered?.y} />}
         </ReactMapGL>
