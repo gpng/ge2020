@@ -1,0 +1,39 @@
+{
+  "name": "escape-images",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@deck.gl/core": "^8.1.12",
+    "@deck.gl/layers": "^8.1.12",
+    "@deck.gl/react": "^8.1.12",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "next": "^9.4.4",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.7",
+    "typeface-lato": "^0.0.75"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
+    "prettier": "^2.0.5",
+    "prettier-eslint": "^11.0.0"
+  }
+}
