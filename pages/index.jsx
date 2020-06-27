@@ -5,8 +5,6 @@ import ReactMapGL, {
   FlyToInterpolator,
   TRANSITION_EVENTS,
 } from 'react-map-gl';
-// translations
-import useTranslations from '../translations/useTranslations';
 // components
 import Tooltip from '../components/Tooltip';
 // constants
@@ -34,8 +32,6 @@ const lineLayerId = 'layer-boundaries-line';
 const sourceId = 'source-boundaries';
 
 const Index = () => {
-  const { t } = useTranslations();
-
   const [viewport, setViewport] = useState(initialViewState);
   const mapRef = useRef(null);
 
@@ -149,9 +145,9 @@ const Index = () => {
 
   return (
     <div className="root">
-      <div className="panel">
+      {/* <div className="panel">
         <h1>{t('index.title')}</h1>
-      </div>
+      </div> */}
       <div className="map">
         <ReactMapGL
           {...viewport}
