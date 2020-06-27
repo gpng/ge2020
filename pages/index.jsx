@@ -244,7 +244,7 @@ const Index = () => {
         <meta property="og:type" key="og-type" content="website" />
 
         <meta name="robots" key="robots" content="index, follow" />
-        {/* <link rel="icon" type="image/png" href="/static/images/favicon.png" /> */}
+        <link rel="icon" type="image/png" href="/static/icons/favicon.png" />
 
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
