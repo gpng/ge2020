@@ -769,6 +769,28 @@ export const PROFILES = {
       image: 'spencer_ng.jpg',
     },
   },
+  SDA: {
+    ABU_MOHAMED: {
+      name: 'Abu Mohamed',
+      image: 'abu_mohamed.jpg',
+    },
+    DESMOND_LIM: {
+      name: 'Desmond Lim Bak Chuan',
+      image: 'desmond_lim.jpg',
+    },
+    HARMINDER_PAL_SINGH: {
+      name: 'Harminder Pal Singh',
+      image: 'harminder_pal_singh.jpg',
+    },
+    KUSWADI_ATNAWI: {
+      name: 'Kuswadi Atnawi ',
+      image: 'kuswadi_atnawi.jpg',
+    },
+    KELVIN_ONG: {
+      name: 'Kelvin Ong',
+      image: 'kelvin_ong.jpg',
+    },
+  },
 };
 export const ED_DATA = [
   {
@@ -1112,12 +1134,18 @@ export const ED_DATA = [
     },
     opposition: [
       {
-        party: PARTIES.PV.id,
-        members: [],
-        confirmed: false,
+        party: PARTIES.SDA.id,
+        members: [
+          PROFILES.SDA.DESMOND_LIM,
+          PROFILES.SDA.ABU_MOHAMED,
+          PROFILES.SDA.HARMINDER_PAL_SINGH,
+          PROFILES.SDA.KUSWADI_ATNAWI,
+          PROFILES.SDA.KELVIN_ONG,
+        ],
+        confirmed: true,
       },
       {
-        party: PARTIES.SDA.id,
+        party: PARTIES.PV.id,
         members: [],
         confirmed: false,
       },
