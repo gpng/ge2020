@@ -237,8 +237,8 @@ const Index = () => {
         <meta property="og:url" key="og-url" content={META.URL} />
         <meta name="twitter:url" key="twitter-url" content={META.URL} />
         {/* image */}
-        {/* <meta property="og:image" content="/static/images/social.png" />
-    <meta name="twitter:image" content="/static/images/social.png" /> */}
+        <meta property="og:image" content="/static/images/social.png" />
+        <meta name="twitter:image" content="/static/images/social.png" />
         {/* twitter */}
         <meta name="twitter:card" content="summary_large_image" />
 
