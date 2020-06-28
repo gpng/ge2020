@@ -1434,7 +1434,7 @@ export const ED_DATA = [
       {
         party: PARTIES.SDP.id,
         members: [PROFILES.SDP.CHEE_SOON_JUAN],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
