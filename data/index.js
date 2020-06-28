@@ -800,6 +800,10 @@ export const PROFILES = {
       name: 'Victor Ronnie Lai',
       image: 'ronnie_lai.jpg',
     },
+    OOI_BOON_EWE: {
+      name: 'Ooi Boon Ewe',
+      image: 'ooi_boon_ewe.jpg',
+    },
   },
 };
 export const ED_DATA = [
@@ -1064,6 +1068,11 @@ export const ED_DATA = [
         party: PARTIES.SDP.id,
         members: [],
         confirmed: false,
+      },
+      {
+        party: PARTIES.INDIE.id,
+        members: [PROFILES.INDIE.OOI_BOON_EWE],
+        confirmed: true,
       },
     ],
   },
