@@ -1,44 +1,54 @@
 export const PARTIES = {
-  PAP: { id: 'PAP', name: "People's Action Party" },
+  PAP: { id: 'PAP', name: "People's Action Party", logo: 'PAP.png' },
   WP: {
     id: 'WP',
     name: `Workers' Party`,
+    logo: 'WP.png',
   },
   PSP: {
     id: 'PSP',
     name: 'Progress Singapore Party',
+    logo: 'PSP.png',
   },
   RP: {
     id: 'RP',
     name: 'Reform Party',
+    logo: 'RP.png',
   },
   NSP: {
     id: 'NSP',
     name: 'National Solidarity Party',
+    logo: 'NSP.svg',
   },
   PV: {
     id: 'PV',
     name: `People's Voice`,
+    logo: 'PV.png',
   },
   SDP: {
     id: 'SDP',
     name: 'Singapore Democratic Party',
+    logo: 'SDP.svg',
   },
   SDA: {
     id: 'SDA',
     name: 'Singapore Democratic Alliance',
+    logo: 'SDA.jpg',
   },
   PPP: {
     id: 'PPP',
     name: `People's Power Party`,
+    logo: 'PPP.png',
   },
   RDU: {
     id: 'RDU',
     name: 'Red Dot United',
+    logo: 'RDU.jpg',
   },
   SPP: {
     id: 'SPP',
     name: `Singapore People's Party`,
+    logo: 'SPP.png',
   },
 };
 

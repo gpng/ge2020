@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Profile from './Profile';
 // constants
 import { COLORS, PARTY_COLORS } from '../constants/styles';
-import { ED_DATA } from '../data';
+import { ED_DATA, PARTIES } from '../data';
 
 const VirusMarker = ({ x, y, id }) => {
   const [data, setData] = useState(null);
@@ -31,7 +31,10 @@ const VirusMarker = ({ x, y, id }) => {
       <div className="row">
         <span className="label-container">
           <div className="label">Current</div>
-          <div className="party">{data.current.party}</div>
+          <div className="party">
+            <span>{data.current.party}</span>
+            <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
+          </div>
         </span>
         <div className="profiles">
           {data.current.members.map((d) => (
@@ -47,7 +50,10 @@ const VirusMarker = ({ x, y, id }) => {
       <div className="row">
         <span className="label-container">
           <div className="label">Incumbent</div>
-          <div className="party">{data.incumbent.party}</div>
+          <div className="party">
+            <span>{data.incumbent.party}</span>
+            <img src={`/static/images/logos/${PARTIES[data.incumbent.party].logo}`} alt="" />
+          </div>
           <div
             className={classNames({
               confirmed: data.incumbent.confirmed,
@@ -72,7 +78,10 @@ const VirusMarker = ({ x, y, id }) => {
         <div className="row" key={o.party}>
           <span className="label-container">
             <div className="label">Opposition</div>
-            <div className="party">{o.party}</div>
+            <div className="party">
+              <span>{o.party}</span>
+              <img src={`/static/images/logos/${PARTIES[o.party].logo}`} alt="" />
+            </div>
             <div
               className={classNames({
                 confirmed: o.confirmed,
@@ -143,6 +152,17 @@ const VirusMarker = ({ x, y, id }) => {
         .unconfirmed {
           color: red;
           font-size: 0.6rem;
+        }
+
+        .party {
+          margin: 0.2rem 0;
+          display: flex;
+          align-items: center;
+        }
+
+        .party > img {
+          height: 1.5rem;
+          margin-left: 0.5rem;
         }
 
         @media only screen and (max-width: 600px) {
