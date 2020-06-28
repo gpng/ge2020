@@ -6,6 +6,7 @@ import ReactMapGL, {
   FlyToInterpolator,
   TRANSITION_EVENTS,
   NavigationControl,
+  HTMLOverlay,
 } from 'react-map-gl';
 import Head from 'next/head';
 import orderBy from 'lodash/orderBy';
@@ -311,7 +312,6 @@ const Index = () => {
             onClick={handleClick}
             onTouchMove={() => setHovered(null)}
           >
-            {hovered && <Tooltip id={hovered?.id} x={hovered?.x} y={hovered?.y} />}
             <div className="select-containers">
               <div className="party-select-container">
                 <select className="party-select" onChange={handlePartyChange}>
@@ -336,6 +336,14 @@ const Index = () => {
               <NavigationControl onViewportChange={setViewport} showCompass={false} captureClick />
             </div>
           </ReactMapGL>
+          {hovered && (
+            <Tooltip
+              id={hovered?.id}
+              x={hovered?.x}
+              y={hovered?.y}
+              onClose={() => setHovered(null)}
+            />
+          )}
         </div>
         <style jsx>
           {`
@@ -353,6 +361,7 @@ const Index = () => {
 
             .map {
               flex: 1 1 auto;
+              position: relative;
             }
 
             .select-containers {

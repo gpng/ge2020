@@ -6,8 +6,9 @@ import Profile from './Profile';
 // constants
 import { COLORS, PARTY_COLORS } from '../constants/styles';
 import { ED_DATA, PARTIES } from '../data';
+import { Close } from './icons';
 
-const VirusMarker = ({ x, y, id }) => {
+const VirusMarker = ({ x, y, id, onClose }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -27,8 +28,15 @@ const VirusMarker = ({ x, y, id }) => {
 
   return (
     <button type="button" className="tooltip-root">
-      <div className="name">{data.name}</div>
-      <div className="electors">{`${data.electors?.toLocaleString?.()} Electors`}</div>
+      <div className="header">
+        <div>
+          <div className="name">{data.name}</div>
+          <div className="electors">{`${data.electors?.toLocaleString?.()} Electors`}</div>
+        </div>
+        <button type="button" className="button-close" onClick={onClose}>
+          <Close height="0.75rem" />
+        </button>
+      </div>
       <div className="row">
         <span className="label-container">
           <div className="label">Current</div>
@@ -115,6 +123,7 @@ const VirusMarker = ({ x, y, id }) => {
           text-align: left;
           padding: 0.5rem;
           min-width: 9rem;
+          max-height: calc(100% - 1rem);
         }
 
         .name {
@@ -170,16 +179,34 @@ const VirusMarker = ({ x, y, id }) => {
           margin-left: 0.5rem;
         }
 
+        .header {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+
+        .button-close {
+          display: none;
+          border: none;
+          padding: 0.25rem;
+          margin-left: 1rem;
+        }
+
         @media only screen and (max-width: 600px) {
           .tooltip-root {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: calc(100vw - 1rem);
+            overflow-y: auto;
           }
 
           .profiles {
             flex-wrap: wrap;
+          }
+
+          .button-close {
+            display: inline-block;
           }
         }
       `}</style>
@@ -197,6 +224,7 @@ VirusMarker.propTypes = {
   x: PropTypes.number,
   y: PropTypes.number,
   id: PropTypes.string,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default VirusMarker;
