@@ -1516,7 +1516,12 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.TEO_SER_LUCK, PROFILES.PAP.LAM_PIN_MIN, PROFILES.PAP.CHARLES_CHONG],
+      members: [
+        PROFILES.PAP.NG_CHEE_MENG,
+        PROFILES.PAP.AMRIN_AMIN,
+        PROFILES.PAP.LAM_PIN_MIN,
+        PROFILES.PAP.RAYMOND_LYE,
+      ],
       confirmed: false,
     },
     opposition: [
