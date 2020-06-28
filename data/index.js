@@ -1087,7 +1087,6 @@ export const ED_DATA = [
         PROFILES.PAP.JANIL_PUTHUCHEARY,
         PROFILES.PAP.ZAINAL_BIN_SAPARI,
         PROFILES.PAP.TEO_SER_LUCK,
-        PROFILES.PAP.NG_CHEE_MENG,
       ],
       confirmed: false,
     },
