@@ -13,13 +13,15 @@
 
 1. Clone this repo
 
-2. Install dependancies
+2. Copy .env.build.sample to make your own .env.build. Get your own Mapbox API token for MAPBOX_TOKEN env variable from [here](https://www.mapbox.com/)
+
+3. Install dependancies
 
    ```
    yarn
    ```
 
-3. Run app
+4. Run app
 
    ```
    yarn dev
