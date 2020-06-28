@@ -1624,21 +1624,22 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.KHAW_BOON_WAN,
+        PROFILES.PAP.ONG_YE_KUNG,
         PROFILES.PAP.VIKRAM_NAIR,
         PROFILES.PAP.LIM_WEE_KIAK,
         PROFILES.PAP.AMRIN_AMIN,
-        PROFILES.PAP.ONG_YE_KUNG,
       ],
     },
     incumbent: {
       party: PARTIES.PAP.id,
       members: [
+        PROFILES.PAP.ONG_YE_KUNG,
         PROFILES.PAP.VIKRAM_NAIR,
         PROFILES.PAP.LIM_WEE_KIAK,
-        PROFILES.PAP.AMRIN_AMIN,
-        PROFILES.PAP.ONG_YE_KUNG,
+        PROFILES.PAP.POH_LI_SAN,
+        PROFILES.PAP.MARIAN_JAFAAR,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
