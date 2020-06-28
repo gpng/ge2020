@@ -897,7 +897,7 @@ export const ED_DATA = [
     name: 'HOUGANG',
     current: {
       party: PARTIES.WP.id,
-      members: [PROFILES.WP.DENNIS_TAN],
+      members: [PROFILES.WP.PNG_ENG_HUAT],
     },
     incumbent: {
       party: PARTIES.WP.id,
