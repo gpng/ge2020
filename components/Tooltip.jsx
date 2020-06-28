@@ -110,7 +110,7 @@ const VirusMarker = ({ x, y, id, onClose }) => {
       <style jsx>{`
         .tooltip-root {
           overflow: hidden;
-          pointer-events: auto;
+          pointer-events: none;
           box-shadow: 0px 3px 6px #00000029;
           border-radius: 5px;
           transform: translate(-50%, calc(-100% - 0.75rem));
@@ -190,6 +190,7 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           border: none;
           padding: 0.25rem;
           margin-left: 1rem;
+          background: transparent;
         }
 
         @media only screen and (max-width: 600px) {
@@ -199,6 +200,7 @@ const VirusMarker = ({ x, y, id, onClose }) => {
             transform: translate(-50%, -50%);
             max-width: calc(100vw - 1rem);
             overflow-y: auto;
+            pointer-events: auto;
           }
 
           .profiles {
@@ -207,6 +209,7 @@ const VirusMarker = ({ x, y, id, onClose }) => {
 
           .button-close {
             display: inline-block;
+            pointer-events: auto;
           }
         }
       `}</style>
