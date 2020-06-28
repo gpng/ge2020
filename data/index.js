@@ -1527,7 +1527,12 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.WP.id,
-        members: [],
+        members: [
+          PROFILES.WP.LEE_LI_LIAN,
+          PROFILES.WP.JEROME_LIM,
+          PROFILES.WP.LOUIS_CHUA,
+          PROFILES.WP.RAEESAH_BEGUM,
+        ],
         confirmed: false,
       },
     ],
