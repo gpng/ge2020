@@ -219,6 +219,7 @@ const Index = () => {
     ]);
     setHovered({
       id,
+      featureId: geojson.id,
       x: (window?.innerWidth ?? 0) / 2,
       y: (window?.innerHeight ?? 0) / 2,
     });
