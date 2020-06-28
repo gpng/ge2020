@@ -1,8 +1,6 @@
-# NextJS with ESLint and Prettier Boilerplate
+# GE2020 Lineup Map
 
-> NextJS app with ESLint and prettier config setup
-
-Done to make my life easier when starting NextJS apps.
+> All confirmed and unconfirmed lineups for SG GE2020
 
 ## Table of Contents
 
@@ -21,19 +19,7 @@ Done to make my life easier when starting NextJS apps.
    yarn
    ```
 
-3. Review outdated dependancies and upgrade if needed
-
-   for eslint, airbnb config
-
-   ```
-   npx install-peerdeps --dev eslint-config-airbnb
-   ```
-
-   ```
-   yarn outdated
-   ```
-
-4. Run app
+3. Run app
 
    ```
    yarn dev
@@ -55,4 +41,4 @@ PRs accepted.
 
 ## License
 
-MIT © 2018 Gerald Png
+MIT © 2020 Gerald Png
