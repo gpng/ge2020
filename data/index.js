@@ -694,6 +694,14 @@ export const PROFILES = {
       name: 'Tan Chen Chen',
       image: 'tan_chen_chen.jpg',
     },
+    ABDUL_SHARIFF: {
+      name: 'Abdul Shariff Bin Aboo Kassim',
+      image: 'abdul_shariff.jpg',
+    },
+    HE_TING_RU: {
+      name: 'He Ting Ru',
+      image: 'he_ting_ru.jpg',
+    },
   },
   PPP: {
     GOH_MENG_SENG: {
@@ -767,6 +775,7 @@ export const ED_DATA = [
     id: 'TP',
     featureId: 2,
     name: 'TANJONG PAGAR',
+    electors: 132598,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -806,6 +815,7 @@ export const ED_DATA = [
     id: 'JB',
     featureId: 3,
     name: 'JALAN BESAR',
+    electors: 106578,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -837,6 +847,7 @@ export const ED_DATA = [
     id: 'PI',
     featureId: 5,
     name: 'PIONEER',
+    electors: 24769,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.CEDRIC_FOO],
@@ -863,6 +874,7 @@ export const ED_DATA = [
     id: 'YH',
     featureId: 7,
     name: 'YUHUA',
+    electors: 21188,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.GRACE_FU],
@@ -884,6 +896,7 @@ export const ED_DATA = [
     id: 'MR',
     featureId: 12,
     name: 'MARYMOUNT',
+    electors: 23439,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.JOSEPHINE_TEO],
@@ -905,6 +918,7 @@ export const ED_DATA = [
     id: 'HG',
     featureId: 14,
     name: 'HOUGANG',
+    electors: 25629,
     current: {
       party: PARTIES.WP.id,
       members: [PROFILES.WP.PNG_ENG_HUAT],
@@ -926,6 +940,7 @@ export const ED_DATA = [
     id: 'MA',
     featureId: 10,
     name: 'MARINE PARADE',
+    electors: 137906,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -959,6 +974,7 @@ export const ED_DATA = [
     id: 'WE',
     featureId: 11,
     name: 'WEST COAST',
+    electors: 144516,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -996,6 +1012,7 @@ export const ED_DATA = [
     id: 'BP',
     featureId: 18,
     name: 'BUKIT PANJANG',
+    electors: 35258,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TEO_HO_PIN],
@@ -1017,6 +1034,7 @@ export const ED_DATA = [
     id: 'YK',
     featureId: 19,
     name: 'YIO CHU KANG',
+    electors: 26046,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.KOH_POH_KOON],
@@ -1038,6 +1056,7 @@ export const ED_DATA = [
     id: 'HT',
     featureId: 23,
     name: 'HOLLAND-BUKIT TIMAH',
+    electors: 112999,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1069,6 +1088,7 @@ export const ED_DATA = [
     id: 'PN',
     featureId: 24,
     name: 'PASIR RIS-PUNGGOL',
+    electors: 161952,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1107,6 +1127,7 @@ export const ED_DATA = [
     id: 'EC',
     featureId: 25,
     name: 'EAST COAST',
+    electors: 120239,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1139,6 +1160,7 @@ export const ED_DATA = [
     id: 'AM',
     featureId: 26,
     name: 'ANG MO KIO',
+    electors: 180186,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1173,6 +1195,7 @@ export const ED_DATA = [
     id: 'PW',
     featureId: 22,
     name: 'PUNGGOL WEST',
+    electors: 25440,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SUN_XUELING],
@@ -1199,6 +1222,7 @@ export const ED_DATA = [
     id: 'CK',
     featureId: 28,
     name: 'CHUA CHU KANG',
+    electors: 103231,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1235,6 +1259,7 @@ export const ED_DATA = [
     id: 'NS',
     featureId: 29,
     name: 'NEE SOON',
+    electors: 143174,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1274,6 +1299,7 @@ export const ED_DATA = [
     id: 'MP',
     featureId: 4,
     name: 'MACPHERSON',
+    electors: 27652,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TIN_PEI_LING],
@@ -1295,6 +1321,7 @@ export const ED_DATA = [
     id: 'RM',
     featureId: 0,
     name: 'RADIN MAS',
+    electors: 25167,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SAM_TAN],
@@ -1321,6 +1348,7 @@ export const ED_DATA = [
     id: 'MB',
     featureId: 1,
     name: 'MOUNTBATTEN',
+    electors: 23957,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
@@ -1347,6 +1375,7 @@ export const ED_DATA = [
     id: 'PS',
     featureId: 6,
     name: 'POTONG PASIR',
+    electors: 18551,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
@@ -1368,6 +1397,7 @@ export const ED_DATA = [
     id: 'BK',
     featureId: 8,
     name: 'BUKIT BATOK',
+    electors: 29389,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.MURALI_PILLAI],
@@ -1389,6 +1419,7 @@ export const ED_DATA = [
     id: 'HN',
     featureId: 15,
     name: 'HONG KAH NORTH',
+    electors: 23519,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.AMY_KHOR],
@@ -1410,6 +1441,7 @@ export const ED_DATA = [
     id: 'JR',
     featureId: 9,
     name: 'JURONG',
+    electors: 129933,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1449,6 +1481,7 @@ export const ED_DATA = [
     id: 'BS',
     featureId: 13,
     name: 'BISHAN-TOA PAYOH',
+    electors: 100036,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1486,6 +1519,7 @@ export const ED_DATA = [
     id: 'TM',
     featureId: 16,
     name: 'TAMPINES',
+    electors: 147249,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1519,6 +1553,7 @@ export const ED_DATA = [
     id: 'SK',
     featureId: 20,
     name: 'SENGKANG',
+    electors: 117546,
     current: {
       party: PARTIES.PAP.id,
       members: [],
@@ -1550,6 +1585,7 @@ export const ED_DATA = [
     id: 'AJ',
     featureId: 17,
     name: 'ALJUNIED',
+    electors: 150303,
     current: {
       party: PARTIES.WP.id,
       members: [
@@ -1583,6 +1619,7 @@ export const ED_DATA = [
     id: 'KR',
     featureId: 21,
     name: 'KEBUN BARU',
+    electors: 22413,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
@@ -1603,6 +1640,7 @@ export const ED_DATA = [
     id: 'MY',
     featureId: 27,
     name: 'MARSILING-YEW TEE',
+    electors: 114243,
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1634,6 +1672,7 @@ export const ED_DATA = [
     id: 'SB',
     featureId: 30,
     name: 'SEMBAWANG',
+    electors: 139724,
     current: {
       party: PARTIES.PAP.id,
       members: [
