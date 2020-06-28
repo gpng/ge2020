@@ -1,1 +1,7 @@
-{}
+{
+  "build": {
+    "env": {
+      "MAPBOX_TOKEN": "@mapbox-token"
+    }
+  }
+}

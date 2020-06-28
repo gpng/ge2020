@@ -2,3 +2,4 @@
 .next
 .vercel
 .vscode
+.env.build

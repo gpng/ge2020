@@ -1,3 +1,3 @@
-export const MAPBOX_TOKEN =
-  'pk.eyJ1IjoiZ3BuZyIsImEiOiJjanRwc3d3NXcwMW1mM3pwYTA4eWdpMjc2In0.mz-xFPetKX3yrf8MMp6cjw';
+// eslint-disable-next-line prefer-destructuring
+export const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN;
 export const MAPBOX_STYLE = 'mapbox://styles/mapbox/light-v10';

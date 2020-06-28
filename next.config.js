@@ -1,4 +1,8 @@
 module.exports = {
+  env: {
+    // Will be available on both server and client
+    MAPBOX_TOKEN: process.env.MAPBOX_TOKEN,
+  },
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     const newConfig = config;
