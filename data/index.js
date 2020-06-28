@@ -1278,7 +1278,7 @@ export const ED_DATA = [
       {
         party: PARTIES.PPP.id,
         members: [PROFILES.PPP.GOH_MENG_SENG],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
