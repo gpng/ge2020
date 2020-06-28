@@ -1598,10 +1598,10 @@ export const ED_DATA = [
       members: [
         PROFILES.PAP.LAWRENCE_WONG,
         PROFILES.PAP.ALEX_YAM,
-        PROFILES.PAP.ONG_TENG_KOON,
-        PROFILES.PAP.BOB_SHAW,
+        PROFILES.PAP.ZAQY_MOHAMAD,
+        PROFILES.PAP.HANY_SOH,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
