@@ -864,7 +864,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [
-        PROFILES.PAP.YAACOB_IBRAHIM,
+        PROFILES.PAP.JOSEPHINE_TEO,
         PROFILES.PAP.HENG_CHEE_HOW,
         PROFILES.PAP.DENISE_PHUA,
         PROFILES.PAP.LILY_NEO,
@@ -944,7 +944,7 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.JOSEPHINE_TEO],
+      members: [PROFILES.PAP.CHONG_KEE_HIONG],
       confirmed: false,
     },
     opposition: [
