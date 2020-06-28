@@ -1319,7 +1319,7 @@ export const ED_DATA = [
   },
   {
     id: 'RM',
-    featureId: 0,
+    featureId: 31,
     name: 'RADIN MAS',
     electors: 25167,
     current: {
