@@ -12,6 +12,7 @@ export const PARTY_COLORS = {
   [PARTIES.PPP.id]: '#2fa61f',
   [PARTIES.RDU.id]: '#d30e0d',
   [PARTIES.SPP.id]: '#2e3a90',
+  [PARTIES.INDIE.id]: '#222222',
 };
 
 export const COLORS = {

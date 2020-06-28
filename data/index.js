@@ -50,6 +50,10 @@ export const PARTIES = {
     name: `Singapore People's Party`,
     logo: 'SPP.png',
   },
+  INDIE: {
+    id: 'INDIE',
+    name: 'Independant',
+  },
 };
 
 export const PROFILES = {
@@ -791,6 +795,12 @@ export const PROFILES = {
       image: 'kelvin_ong.jpg',
     },
   },
+  INDIE: {
+    RONNIE_LAI: {
+      name: 'Victor Ronnie Lai',
+      image: 'ronnie_lai.jpg',
+    },
+  },
 };
 export const ED_DATA = [
   {
@@ -889,6 +899,11 @@ export const ED_DATA = [
         party: PARTIES.PV.id,
         members: [],
         confirmed: false,
+      },
+      {
+        party: PARTIES.INDIE.id,
+        members: [PROFILES.INDIE.RONNIE_LAI],
+        confirmed: true,
       },
     ],
   },

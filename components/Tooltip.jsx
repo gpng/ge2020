@@ -42,7 +42,9 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           <div className="label">Current</div>
           <div className="party">
             <span>{data.current.party}</span>
-            <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
+            {PARTIES[data.current.party].logo && (
+              <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
+            )}
           </div>
         </span>
         <div className="profiles">
@@ -61,7 +63,9 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           <div className="label">Incumbent</div>
           <div className="party">
             <span>{data.incumbent.party}</span>
-            <img src={`/static/images/logos/${PARTIES[data.incumbent.party].logo}`} alt="" />
+            {PARTIES[data.incumbent.party].logo && (
+              <img src={`/static/images/logos/${PARTIES[data.incumbent.party].logo}`} alt="" />
+            )}
           </div>
           <div
             className={classNames({
@@ -89,7 +93,9 @@ const VirusMarker = ({ x, y, id, onClose }) => {
             <div className="label">Opposition</div>
             <div className="party">
               <span>{o.party}</span>
-              <img src={`/static/images/logos/${PARTIES[o.party].logo}`} alt="" />
+              {PARTIES[o.party].logo && (
+                <img src={`/static/images/logos/${PARTIES[o.party].logo}`} alt="" />
+              )}
             </div>
             <div
               className={classNames({
