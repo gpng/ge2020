@@ -312,30 +312,30 @@ const Index = () => {
             onClick={handleClick}
             onTouchMove={() => setHovered(null)}
           >
-            <div className="select-containers">
-              <div className="party-select-container">
-                <select className="party-select" onChange={handlePartyChange}>
-                  <option value="all">All Parties</option>
-                  {orderBy(Object.values(PARTIES), 'name').map((x) => (
-                    <option key={x.id} value={x.id}>{`${x.name} (${x.id})`}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="ed-select-container">
-                <select className="ed-select" onChange={handleEdChange} value={selectedEd}>
-                  <option value="all">Select a electoral district</option>
-                  {orderBy(ED_DATA, 'name').map((x) => (
-                    <option key={x.id} value={x.id}>
-                      {x.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
             <div className="navigation">
               <NavigationControl onViewportChange={setViewport} showCompass={false} captureClick />
             </div>
           </ReactMapGL>
+          <div className="select-containers">
+            <div className="party-select-container">
+              <select className="party-select" onChange={handlePartyChange}>
+                <option value="all">All Parties</option>
+                {orderBy(Object.values(PARTIES), 'name').map((x) => (
+                  <option key={x.id} value={x.id}>{`${x.name} (${x.id})`}</option>
+                ))}
+              </select>
+            </div>
+            <div className="ed-select-container">
+              <select className="ed-select" onChange={handleEdChange} value={selectedEd}>
+                <option value="all">Select a electoral district</option>
+                {orderBy(ED_DATA, 'name').map((x) => (
+                  <option key={x.id} value={x.id}>
+                    {x.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
           {hovered && (
             <Tooltip
               id={hovered?.id}
