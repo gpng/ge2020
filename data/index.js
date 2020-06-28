@@ -1361,11 +1361,6 @@ export const ED_DATA = [
     },
     opposition: [
       {
-        party: PARTIES.PPP.id,
-        members: [],
-        confirmed: false,
-      },
-      {
         party: PARTIES.RP.id,
         members: [],
         confirmed: false,
@@ -1417,7 +1412,7 @@ export const ED_DATA = [
       {
         party: PARTIES.SPP.id,
         members: [PROFILES.SPP.JOSE_RAYMOND],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
