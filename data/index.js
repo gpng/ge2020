@@ -1096,6 +1096,11 @@ export const ED_DATA = [
         members: [PROFILES.PSP.KAYLA_LOW],
         confirmed: true,
       },
+      {
+        party: PARTIES.RP.id,
+        members: [],
+        confirmed: false,
+      },
     ],
   },
   {
