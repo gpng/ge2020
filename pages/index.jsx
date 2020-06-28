@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ReactMapGL, {
   WebMercatorViewport,
   FlyToInterpolator,
@@ -41,6 +42,7 @@ const Index = () => {
   const mapRef = useRef(null);
 
   const [hovered, setHovered] = useState(null);
+  const prevHovered = useRef(null);
 
   const [selectedEd, setSelectedEd] = useState('all');
 
@@ -73,6 +75,7 @@ const Index = () => {
             fillColor: PARTY_COLORS[current.party],
             outlineColor: opposition?.length > 0 ? PARTY_COLORS[opposition[0].party] : null,
             visible: true,
+            hovered: false,
           },
         );
       }
@@ -117,8 +120,7 @@ const Index = () => {
             'rgba(0, 0, 0, 0.1)',
           ],
           'fill-outline-color': 'rgba(0, 0, 0, 1)',
-          'fill-opacity': 0.4,
-          // 'fill-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.4, 0],
+          'fill-opacity': ['case', ['boolean', ['feature-state', 'hovered'], true], 0.8, 0.4],
         },
       });
       // layer for line
@@ -134,8 +136,7 @@ const Index = () => {
             'rgba(0, 0, 0, 0)',
           ],
           'line-width': 4,
-          'line-opacity': 0.6,
-          // 'line-opacity': ['case', ['boolean', ['feature-state', 'visible'], true], 0.6, 0],
+          'line-opacity': ['case', ['boolean', ['feature-state', 'hovered'], true], 1, 0.6],
         },
       });
     }
@@ -154,6 +155,7 @@ const Index = () => {
     }
     setHovered({
       id: ed?.properties?.id,
+      featureId: ed?.id,
       x: ev.point[0],
       y: ev.point[1],
     });
@@ -168,6 +170,7 @@ const Index = () => {
     }
     setHovered({
       id: ed?.properties?.id,
+      featureId: ed?.id,
       x: ev.point[0],
       y: ev.point[1],
     });
@@ -221,9 +224,47 @@ const Index = () => {
     });
   };
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    if (hovered?.featureId && hovered.featureId !== prevHovered.current?.featureId) {
+      map.setFeatureState(
+        {
+          source: sourceId,
+          id: hovered.featureId,
+        },
+        {
+          hovered: true,
+        },
+      );
+      if (prevHovered.current) {
+        map.setFeatureState(
+          {
+            source: sourceId,
+            id: prevHovered.current.featureId,
+          },
+          {
+            hovered: false,
+          },
+        );
+      }
+    }
+    if (!hovered && prevHovered.current) {
+      map.setFeatureState(
+        {
+          source: sourceId,
+          id: prevHovered.current.featureId,
+        },
+        {
+          hovered: false,
+        },
+      );
+    }
+    prevHovered.current = hovered;
+  }, [hovered]);
+
   return (
     <>
-      {' '}
       <Head>
         <title>{META.TITLE}</title>
         {/* title */}
@@ -250,9 +291,6 @@ const Index = () => {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <div className="root">
-        {/* <div className="panel">
-        <h1>{t('index.title')}</h1>
-      </div> */}
         <div className="map">
           <ReactMapGL
             {...viewport}
