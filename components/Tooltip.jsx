@@ -28,6 +28,7 @@ const VirusMarker = ({ x, y, id }) => {
   return (
     <button type="button" className="tooltip-root">
       <div className="name">{data.name}</div>
+      <div className="electors">{`${data.electors?.toLocaleString?.()} Electors`}</div>
       <div className="row">
         <span className="label-container">
           <div className="label">Current</div>
@@ -119,6 +120,10 @@ const VirusMarker = ({ x, y, id }) => {
         .name {
           font-size: 1rem;
           font-weight: bold;
+        }
+
+        .electors {
+          font-size: 0.8rem;
         }
 
         .row {
