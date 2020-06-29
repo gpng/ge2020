@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 // components
 import { Close } from './icons';
-// actions
+import Profile from './Profile';
 // constants
 import { COLORS, PARTY_COLORS } from '../constants/styles';
 import { ED_DATA, PARTIES } from '../data';
-import Profile from './Profile';
 import { WALKOVER } from '../constants';
 
 const InfoPanel = ({ selected, setSelected }) => {
@@ -22,14 +21,16 @@ const InfoPanel = ({ selected, setSelected }) => {
     <div className="info-panel-root">
       <div className="placeholder" />
       <header className="header">
-        <div>
+        <div className="name-wrapper">
           <div className="name">{data?.name}</div>
           <div className="electors">{`${data?.electors?.toLocaleString?.()} Electors`}</div>
         </div>
         {setSelected && (
-          <button type="button" className="button-close" onClick={() => setSelected(null)}>
-            <Close height="0.75rem" />
-          </button>
+          <div className="button-close-wrapper">
+            <button type="button" className="button-close" onClick={() => setSelected(null)}>
+              <Close height="16px" fill={COLORS.TEXT_PRIMARY} />
+            </button>
+          </div>
         )}
       </header>
       {data && (
@@ -174,20 +175,32 @@ const InfoPanel = ({ selected, setSelected }) => {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            margin-top: 5rem;
+            margin-top: 6rem;
             flex: 0 0 auto;
             min-height: 1px;
             margin-bottom: 1rem;
             align-items: flex-start;
           }
 
-          .button-close {
+          .name-wrapper {
+            flex: 1 1 auto;
+            min-width: 1px;
+          }
+
+          .button-close-wrapper {
             flex: 0 0 auto;
+            min-width: 1px;
+          }
+
+          .button-close {
             padding: 0.5rem;
-            border-radius: 50%;
-            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: transparent;
             border: none;
+            box-shadow: 0px 1px 2px #00000029;
+            border-radius: 50%;
           }
 
           .name {
