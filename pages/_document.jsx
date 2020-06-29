@@ -31,6 +31,28 @@ class MyDocument extends Document {
               />
             </>
           )}
+          <script
+            /* eslint-disable-next-line react/no-danger */
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.$crisp = [];
+              window.CRISP_READY_TRIGGER = function() {
+                window.$crisp.push(["do", "chat:hide"]);
+                window.$crisp.push(["on", "chat:closed", () => {
+                  window.$crisp.push(["do", "chat:hide"]);
+                }])
+              }
+              window.CRISP_WEBSITE_ID = '428d2a17-1b94-43ac-b04a-1ed701139023';
+              (function() {
+                d = document;
+                s = d.createElement('script');
+                s.src = 'https://client.crisp.chat/l.js';
+                s.async = 1;
+                d.getElementsByTagName('head')[0].appendChild(s);
+              })();
+            `,
+            }}
+          />
         </Head>
         <body>
           <Main />

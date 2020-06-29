@@ -152,6 +152,20 @@ const InfoPanel = ({ selected, setSelected }) => {
               })}
             </div>
           )}
+          <div className="footer">
+            <button
+              type="button"
+              className="button-report"
+              onClick={() => {
+                if (window?.$crisp) {
+                  window.$crisp.push(['do', 'chat:show']);
+                  window.$crisp.push(['do', 'chat:open']);
+                }
+              }}
+            >
+              Report inaccuracies or updates
+            </button>
+          </div>
         </div>
       )}
       <style jsx>
@@ -302,6 +316,17 @@ const InfoPanel = ({ selected, setSelected }) => {
             flex: 0 0 4rem;
             min-width: 1px;
             font-weight: bold;
+          }
+
+          .footer {
+            margin-top: 2rem;
+          }
+
+          .button-report {
+            padding: 0;
+            font-size: 0.8rem;
+            border: none;
+            text-decoration: underline;
           }
 
           @media only screen and (max-width: 600px) {
