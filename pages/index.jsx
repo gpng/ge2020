@@ -165,7 +165,6 @@ const Index = () => {
   };
 
   const handleClick = (ev) => {
-    console.log('ev: ', ev);
     const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
     if (!ed?.properties?.id || !ed?.state?.visible) {
       return;
