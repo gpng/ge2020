@@ -51,6 +51,8 @@ const Index = () => {
 
   const [disableHover, setDisableHover] = useState(false);
 
+  const [showTooltipContent, setShowTooltipContent] = useState(true);
+
   const fitMapToBounds = (points) => {
     const { longitude, latitude, zoom } = new WebMercatorViewport(viewport).fitBounds(points);
     setViewport({
@@ -341,9 +343,22 @@ const Index = () => {
                 ))}
               </select>
             </div>
+            <div className="checkbox-container">
+              <label htmlFor="chk-tooltip">
+                Show lineup on hover:
+                <input
+                  id="chk-tooltip"
+                  type="checkbox"
+                  className="input-checkbox"
+                  checked={showTooltipContent}
+                  onChange={(ev) => setShowTooltipContent(ev.target.checked)}
+                />
+              </label>
+            </div>
           </div>
           {hovered && (
             <Tooltip
+              showContent={showTooltipContent}
               id={hovered?.id}
               x={hovered?.x}
               y={hovered?.y}
@@ -380,6 +395,14 @@ const Index = () => {
 
             .ed-select-container {
               margin-top: 1rem;
+            }
+
+            .checkbox-container {
+              margin-top: 1rem;
+            }
+
+            .input-checkbox {
+              margin-left: 0.5rem;
             }
 
             .navigation {

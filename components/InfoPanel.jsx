@@ -175,7 +175,7 @@ const InfoPanel = ({ selected, setSelected }) => {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            margin-top: 6rem;
+            margin-top: 8rem;
             flex: 0 0 auto;
             min-height: 1px;
             margin-bottom: 1rem;

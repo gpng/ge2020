@@ -8,7 +8,7 @@ import { COLORS, PARTY_COLORS } from '../constants/styles';
 import { ED_DATA, PARTIES } from '../data';
 import { Close } from './icons';
 
-const VirusMarker = ({ x, y, id, onClose }) => {
+const VirusMarker = ({ x, y, id, onClose, showContent }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -37,82 +37,91 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           <Close height="0.75rem" />
         </button>
       </div>
-      <div className="row">
-        <span className="label-container">
-          <div className="label">Current</div>
-          <div className="party">
-            <span>{data.current.party}</span>
-            {PARTIES[data.current.party].logo && (
-              <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
-            )}
-          </div>
-        </span>
-        <div className="profiles">
-          {data.current.members.map((d) => (
-            <Profile
-              key={d.name}
-              image={d.image}
-              name={d.name}
-              color={PARTY_COLORS[data.current.party]}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="row">
-        <span className="label-container">
-          <div className="label">Incumbent</div>
-          <div className="party">
-            <span>{data.incumbent.party}</span>
-            {PARTIES[data.incumbent.party].logo && (
-              <img src={`/static/images/logos/${PARTIES[data.incumbent.party].logo}`} alt="" />
-            )}
-          </div>
-          <div
-            className={classNames({
-              confirmed: data.incumbent.confirmed,
-              unconfirmed: !data.incumbent.confirmed,
-            })}
-          >
-            {data.incumbent.confirmed ? 'Confirmed' : 'Unconfirmed'}
-          </div>
-        </span>
-        <div className="profiles">
-          {data.incumbent.members.map((d) => (
-            <Profile
-              key={d.name}
-              image={d.image}
-              name={d.name}
-              color={PARTY_COLORS[data.incumbent.party]}
-            />
-          ))}
-        </div>
-      </div>
-      {data.opposition.map((o) => (
-        <div className="row" key={o.party}>
-          <span className="label-container">
-            <div className="label">Opposition</div>
-            <div className="party">
-              <span>{o.party}</span>
-              {PARTIES[o.party].logo && (
-                <img src={`/static/images/logos/${PARTIES[o.party].logo}`} alt="" />
-              )}
+      {showContent && (
+        <>
+          <div className="row">
+            <span className="label-container">
+              <div className="label">Current</div>
+              <div className="party">
+                <span>{data.current.party}</span>
+                {PARTIES[data.current.party].logo && (
+                  <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
+                )}
+              </div>
+            </span>
+            <div className="profiles">
+              {data.current.members.map((d) => (
+                <Profile
+                  key={d.name}
+                  image={d.image}
+                  name={d.name}
+                  color={PARTY_COLORS[data.current.party]}
+                />
+              ))}
             </div>
-            <div
-              className={classNames({
-                confirmed: o.confirmed,
-                unconfirmed: !o.confirmed,
-              })}
-            >
-              {o.confirmed ? 'Confirmed' : 'Unconfirmed'}
-            </div>
-          </span>
-          <div className="profiles">
-            {o.members.map((d) => (
-              <Profile key={d.name} image={d.image} name={d.name} color={PARTY_COLORS[o.party]} />
-            ))}
           </div>
-        </div>
-      ))}
+          <div className="row">
+            <span className="label-container">
+              <div className="label">Incumbent</div>
+              <div className="party">
+                <span>{data.incumbent.party}</span>
+                {PARTIES[data.incumbent.party].logo && (
+                  <img src={`/static/images/logos/${PARTIES[data.incumbent.party].logo}`} alt="" />
+                )}
+              </div>
+              <div
+                className={classNames({
+                  confirmed: data.incumbent.confirmed,
+                  unconfirmed: !data.incumbent.confirmed,
+                })}
+              >
+                {data.incumbent.confirmed ? 'Confirmed' : 'Unconfirmed'}
+              </div>
+            </span>
+            <div className="profiles">
+              {data.incumbent.members.map((d) => (
+                <Profile
+                  key={d.name}
+                  image={d.image}
+                  name={d.name}
+                  color={PARTY_COLORS[data.incumbent.party]}
+                />
+              ))}
+            </div>
+          </div>
+          {data.opposition.map((o) => (
+            <div className="row" key={o.party}>
+              <span className="label-container">
+                <div className="label">Opposition</div>
+                <div className="party">
+                  <span>{o.party}</span>
+                  {PARTIES[o.party].logo && (
+                    <img src={`/static/images/logos/${PARTIES[o.party].logo}`} alt="" />
+                  )}
+                </div>
+                <div
+                  className={classNames({
+                    confirmed: o.confirmed,
+                    unconfirmed: !o.confirmed,
+                  })}
+                >
+                  {o.confirmed ? 'Confirmed' : 'Unconfirmed'}
+                </div>
+              </span>
+              <div className="profiles">
+                {o.members.map((d) => (
+                  <Profile
+                    key={d.name}
+                    image={d.image}
+                    name={d.name}
+                    color={PARTY_COLORS[o.party]}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </>
+      )}
       <div className="click-message">Click for more information</div>
       <style jsx>{`
         .tooltip-root {
@@ -247,6 +256,7 @@ VirusMarker.propTypes = {
   y: PropTypes.number,
   id: PropTypes.string,
   onClose: PropTypes.func.isRequired,
+  showContent: PropTypes.bool.isRequired,
 };
 
 export default VirusMarker;
