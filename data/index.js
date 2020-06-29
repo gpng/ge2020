@@ -52,7 +52,7 @@ export const PARTIES = {
   },
   INDIE: {
     id: 'INDIE',
-    name: 'Independant',
+    name: 'Independent',
   },
 };
 
