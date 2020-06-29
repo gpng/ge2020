@@ -288,10 +288,13 @@ const Index = () => {
         <meta property="og:url" key="og-url" content={META.URL} />
         <meta name="twitter:url" key="twitter-url" content={META.URL} />
         {/* image */}
-        <meta property="og:image" content="https://ge2020.now.sh/static/images/social.png" />
+        <meta
+          property="og:image"
+          content="https://ge2020.now.sh/static/images/social.png?1234567"
+        />
         <meta
           name="twitter:image"
-          content="https://ge2020.now.sh/static/images/social.png?123456"
+          content="https://ge2020.now.sh/static/images/social.png?1234567"
         />
         {/* twitter */}
         <meta name="twitter:card" content="summary_large_image" />
