@@ -722,6 +722,18 @@ export const PROFILES = {
       name: 'Chee Soon Juan',
       image: 'chee_soon_juan.jpg',
     },
+    BRYAN_LIM: {
+      name: 'Bryan Lim Boon Heng',
+      image: 'bryan_lim.jpg',
+    },
+    DAMANHURI_ABAS: {
+      name: 'Damanhuri Bin Abas',
+      image: 'damanhuri_abas.jpg',
+    },
+    JAMES_GOMEZ: {
+      name: 'James Gomez',
+      image: 'james_gomez.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
@@ -1714,7 +1726,7 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [],
+        members: [PROFILES.SDP.BRYAN_LIM, PROFILES.SDP.DAMANHURI_ABAS, PROFILES.SDP.JAMES_GOMEZ],
         confirmed: false,
       },
     ],
