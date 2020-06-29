@@ -494,6 +494,10 @@ export const PROFILES = {
       name: 'Ong Ye Kung',
       image: 'ong_ye_kung.jpg',
     },
+    XIE_YAO_QUAN: {
+      name: 'Xie Yao Quan',
+      image: 'xie_yao_quan.jpg',
+    },
   },
   PSP: {
     TAN_CHENG_BOCK: {
@@ -718,6 +722,18 @@ export const PROFILES = {
       name: 'Chee Soon Juan',
       image: 'chee_soon_juan.jpg',
     },
+    BRYAN_LIM: {
+      name: 'Bryan Lim Boon Heng',
+      image: 'bryan_lim.jpg',
+    },
+    DAMANHURI_ABAS: {
+      name: 'Damanhuri Bin Abas',
+      image: 'damanhuri_abas.jpg',
+    },
+    JAMES_GOMEZ: {
+      name: 'James Gomez',
+      image: 'james_gomez.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
@@ -827,7 +843,7 @@ export const ED_DATA = [
       members: [
         PROFILES.PAP.CHAN_CHUN_SING,
         PROFILES.PAP.INDRANEE_RAJAH,
-        PROFILES.PAP.CHIA_SHI_LU,
+        PROFILES.PAP.JOAN_PEREIRA,
         PROFILES.PAP.ERIC_CHUA,
         PROFILES.PAP.ALVIN_TAN,
       ],
@@ -1233,12 +1249,12 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.LEE_HSIEN_LOONG,
-        PROFILES.PAP.ANG_HIN_KEE,
-        PROFILES.PAP.INTAN_AZURA_MOKHTAR,
+        PROFILES.PAP.NG_LING_LING,
+        PROFILES.PAP.NADIA_AHMAD,
         PROFILES.PAP.GAN_THIAM_PO,
         PROFILES.PAP.DARRYL_DAVID,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1333,7 +1349,6 @@ export const ED_DATA = [
         PROFILES.PAP.K_SHANMUGAM,
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
         PROFILES.PAP.LEE_BEE_WAH,
-        PROFILES.PAP.HENRY_KWEK,
         PROFILES.PAP.LOUIS_NG,
       ],
       confirmed: false,
@@ -1411,11 +1426,6 @@ export const ED_DATA = [
       confirmed: false,
     },
     opposition: [
-      {
-        party: PARTIES.SDP.id,
-        members: [],
-        confirmed: false,
-      },
       {
         party: PARTIES.PV.id,
         members: [],
@@ -1508,12 +1518,12 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.THARMAN,
-        PROFILES.PAP.DESMOND_LEE,
-        PROFILES.PAP.ANG_WEI_NENG,
         PROFILES.PAP.RAHAYU_MAHZAM,
         PROFILES.PAP.TAN_WU_MENG,
+        PROFILES.PAP.XIE_YAO_QUAN,
+        PROFILES.PAP.SHAWN_HUANG,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1679,6 +1689,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
+      confirmed: true,
     },
     opposition: [
       {
@@ -1715,7 +1726,7 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [],
+        members: [PROFILES.SDP.BRYAN_LIM, PROFILES.SDP.DAMANHURI_ABAS, PROFILES.SDP.JAMES_GOMEZ],
         confirmed: false,
       },
     ],
