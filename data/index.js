@@ -828,10 +828,10 @@ export const ED_DATA = [
         PROFILES.PAP.CHAN_CHUN_SING,
         PROFILES.PAP.INDRANEE_RAJAH,
         PROFILES.PAP.CHIA_SHI_LU,
-        PROFILES.PAP.MELVIN_YONG,
-        PROFILES.PAP.JOAN_PEREIRA,
+        PROFILES.PAP.ERIC_CHUA,
+        PROFILES.PAP.ALVIN_TAN,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1385,8 +1385,8 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.SAM_TAN],
-      confirmed: false,
+      members: [PROFILES.PAP.MELVIN_YONG],
+      confirmed: true,
     },
     opposition: [
       {
