@@ -929,7 +929,7 @@ export const ED_DATA = [
         electors: 25745,
         results: [
           { name: 'PAP', votes: 14593, votesPerc: 60.73 },
-          { name: 'NSP', votes: 9437, votesPerc: 9437 },
+          { name: 'NSP', votes: 9437, votesPerc: 39.27 },
         ],
       },
       2015: {
@@ -971,7 +971,23 @@ export const ED_DATA = [
     id: 'YH',
     featureId: 7,
     name: 'YUHUA',
-    electors: 21188,
+    electors: 21376,
+    history: {
+      2011: {
+        electors: 23195,
+        results: [
+          { name: 'PAP', votes: 14093, votesPerc: 66.86 },
+          { name: 'NSP', votes: 6986, votesPerc: 33.14 },
+        ],
+      },
+      2015: {
+        electors: 22617,
+        results: [
+          { name: 'PAP', votes: 15298, votesPerc: 72 },
+          { name: 'SDP', votes: 5505, votesPerc: 28 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.GRACE_FU],
@@ -993,7 +1009,7 @@ export const ED_DATA = [
     id: 'MR',
     featureId: 12,
     name: 'MARYMOUNT',
-    electors: 23439,
+    electors: 23444,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.JOSEPHINE_TEO],
@@ -1015,7 +1031,23 @@ export const ED_DATA = [
     id: 'HG',
     featureId: 14,
     name: 'HOUGANG',
-    electors: 25629,
+    electors: 26468,
+    history: {
+      2011: {
+        electors: 24560,
+        results: [
+          { name: 'WP', votes: 14850, votesPerc: 64.8 },
+          { name: 'PAP', votes: 8065, votesPerc: 35.2 },
+        ],
+      },
+      2015: {
+        electors: 24097,
+        results: [
+          { name: 'WP', votes: 13012, votesPerc: 57.69 },
+          { name: 'PAP', votes: 9543, votesPerc: 42.31 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.WP.id,
       members: [PROFILES.WP.PNG_ENG_HUAT],
@@ -1037,7 +1069,23 @@ export const ED_DATA = [
     id: 'MA',
     featureId: 10,
     name: 'MARINE PARADE',
-    electors: 137906,
+    electors: 139738,
+    history: {
+      2011: {
+        electors: 154451,
+        results: [
+          { name: 'PAP', votes: 78286, votesPerc: 56.64 },
+          { name: 'NSP', votes: 59926, votesPerc: 43.36 },
+        ],
+      },
+      2015: {
+        electors: 146244,
+        results: [
+          { name: 'PAP', votes: 84939, votesPerc: 64.07 },
+          { name: 'WP', votes: 47269, votesPerc: 35.93 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1071,7 +1119,23 @@ export const ED_DATA = [
     id: 'WE',
     featureId: 11,
     name: 'WEST COAST',
-    electors: 144516,
+    electors: 146251,
+    history: {
+      2011: {
+        electors: 121045,
+        results: [
+          { name: 'PAP', votes: 42563, votesPerc: 66.57 },
+          { name: 'RP', votes: 36443, votesPerc: 33.43 },
+        ],
+      },
+      2015: {
+        electors: 99300,
+        results: [
+          { name: 'PAP', votes: 71091, votesPerc: 78.57 },
+          { name: 'WP', votes: 19392, votesPerc: 21.43 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1109,7 +1173,23 @@ export const ED_DATA = [
     id: 'BP',
     featureId: 18,
     name: 'BUKIT PANJANG',
-    electors: 35258,
+    electors: 35497,
+    history: {
+      2011: {
+        electors: 33053,
+        results: [
+          { name: 'PAP', votes: 20375, votesPerc: 66.27 },
+          { name: 'SDP', votes: 10372, votesPerc: 33.73 },
+        ],
+      },
+      2015: {
+        electors: 34317,
+        results: [
+          { name: 'PAP', votes: 21935, votesPerc: 68.38 },
+          { name: 'SDP', votes: 10143, votesPerc: 31.62 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TEO_HO_PIN],
@@ -1136,7 +1216,7 @@ export const ED_DATA = [
     id: 'YK',
     featureId: 19,
     name: 'YIO CHU KANG',
-    electors: 26046,
+    electors: 26005,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.KOH_POH_KOON],
@@ -1163,7 +1243,23 @@ export const ED_DATA = [
     id: 'HT',
     featureId: 23,
     name: 'HOLLAND-BUKIT TIMAH',
-    electors: 112999,
+    electors: 115012,
+    history: {
+      2011: {
+        electors: 91607,
+        results: [
+          { name: 'PAP', votes: 48773, votesPerc: 60.08 },
+          { name: 'SDP', votes: 32406, votesPerc: 39.92 },
+        ],
+      },
+      2015: {
+        electors: 104491,
+        results: [
+          { name: 'PAP', votes: 62630, votesPerc: 66.62 },
+          { name: 'SDP', votes: 31380, votesPerc: 33.38 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1195,7 +1291,23 @@ export const ED_DATA = [
     id: 'PN',
     featureId: 24,
     name: 'PASIR RIS-PUNGGOL',
-    electors: 161952,
+    electors: 166587,
+    history: {
+      2011: {
+        electors: 168971,
+        results: [
+          { name: 'PAP', votes: 100493, votesPerc: 64.79 },
+          { name: 'SDA', votes: 54601, votesPerc: 35.21 },
+        ],
+      },
+      2015: {
+        electors: 187396,
+        results: [
+          { name: 'PAP', votes: 125021, votesPerc: 72.89 },
+          { name: 'SDP', votes: 46508, votesPerc: 27.11 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1240,7 +1352,23 @@ export const ED_DATA = [
     id: 'EC',
     featureId: 25,
     name: 'EAST COAST',
-    electors: 120239,
+    electors: 121772,
+    history: {
+      2011: {
+        electors: 120324,
+        results: [
+          { name: 'PAP', votes: 59992, votesPerc: 54.83 },
+          { name: 'WP', votes: 49429, votesPerc: 45.17 },
+        ],
+      },
+      2015: {
+        electors: 99118,
+        results: [
+          { name: 'PAP', votes: 54981, votesPerc: 60.73 },
+          { name: 'WP', votes: 35547, votesPerc: 39.27 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1273,7 +1401,23 @@ export const ED_DATA = [
     id: 'AM',
     featureId: 26,
     name: 'ANG MO KIO',
-    electors: 180186,
+    electors: 185465,
+    history: {
+      2011: {
+        electors: 179071,
+        results: [
+          { name: 'PAP', votes: 112677, votesPerc: 69.33 },
+          { name: 'RP', votes: 49851, votesPerc: 30.67 },
+        ],
+      },
+      2015: {
+        electors: 187771,
+        results: [
+          { name: 'PAP', votes: 135115, votesPerc: 78.63 },
+          { name: 'RP', votes: 36711, votesPerc: 21.37 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1308,7 +1452,7 @@ export const ED_DATA = [
     id: 'PW',
     featureId: 22,
     name: 'PUNGGOL WEST',
-    electors: 25440,
+    electors: 26579,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SUN_XUELING],
@@ -1335,7 +1479,23 @@ export const ED_DATA = [
     id: 'CK',
     featureId: 28,
     name: 'CHUA CHU KANG',
-    electors: 103231,
+    electors: 106693,
+    history: {
+      2011: {
+        electors: 158648,
+        results: [
+          { name: 'PAP', votes: 89710, votesPerc: 61.2 },
+          { name: 'NSP', votes: 56885, votesPerc: 38.8 },
+        ],
+      },
+      2015: {
+        electors: 119931,
+        results: [
+          { name: 'PAP', votes: 84731, votesPerc: 76.89 },
+          { name: 'PPP', votes: 25460, votesPerc: 23.11 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1372,7 +1532,23 @@ export const ED_DATA = [
     id: 'NS',
     featureId: 29,
     name: 'NEE SOON',
-    electors: 143174,
+    electors: 147047,
+    history: {
+      2011: {
+        electors: 148290,
+        results: [
+          { name: 'PAP', votes: 80740, votesPerc: 58.4 },
+          { name: 'WP', votes: 57523, votesPerc: 41.6 },
+        ],
+      },
+      2015: {
+        electors: 132289,
+        results: [
+          { name: 'PAP', votes: 82197, votesPerc: 66.83 },
+          { name: 'WP', votes: 40796, votesPerc: 33.17 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1411,7 +1587,17 @@ export const ED_DATA = [
     id: 'MP',
     featureId: 4,
     name: 'MACPHERSON',
-    electors: 27652,
+    electors: 28564,
+    history: {
+      2015: {
+        electors: 28511,
+        results: [
+          { name: 'PAP', votes: 17227, votesPerc: 65.58 },
+          { name: 'WP', votes: 8826, votesPerc: 33.6 },
+          { name: 'NSP', votes: 215, votesPerc: 0.82 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TIN_PEI_LING],
@@ -1433,7 +1619,24 @@ export const ED_DATA = [
     id: 'RM',
     featureId: 31,
     name: 'RADIN MAS',
-    electors: 25167,
+    electors: 24980,
+    history: {
+      2011: {
+        electors: 31014,
+        results: [
+          { name: 'PAP', votes: 18609, votesPerc: 67.1 },
+          { name: 'NSP', votes: 9123, votesPerc: 32.9 },
+        ],
+      },
+      2015: {
+        electors: 28906,
+        results: [
+          { name: 'PAP', votes: 20230, votesPerc: 77.25 },
+          { name: 'RP', votes: 3329, votesPerc: 12.71 },
+          { name: 'INDIE', votes: 2629, votesPerc: 10.04 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SAM_TAN],
@@ -1455,7 +1658,23 @@ export const ED_DATA = [
     id: 'MB',
     featureId: 1,
     name: 'MOUNTBATTEN',
-    electors: 23957,
+    electors: 24267,
+    history: {
+      2011: {
+        electors: 23731,
+        results: [
+          { name: 'PAP', votes: 11985, votesPerc: 58.62 },
+          { name: 'NSP', votes: 8461, votesPerc: 41.38 },
+        ],
+      },
+      2015: {
+        electors: 24143,
+        results: [
+          { name: 'PAP', votes: 15290, votesPerc: 71.84 },
+          { name: 'SPP', votes: 5992, votesPerc: 28.16 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
