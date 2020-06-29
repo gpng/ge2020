@@ -1349,7 +1349,6 @@ export const ED_DATA = [
         PROFILES.PAP.K_SHANMUGAM,
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
         PROFILES.PAP.LEE_BEE_WAH,
-        PROFILES.PAP.HENRY_KWEK,
         PROFILES.PAP.LOUIS_NG,
       ],
       confirmed: false,
@@ -1690,6 +1689,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
+      confirmed: true,
     },
     opposition: [
       {
