@@ -1115,7 +1115,7 @@ export const ED_DATA = [
         PROFILES.PAP.TAN_SEE_LENG,
         PROFILES.PAP.EDWIN_TONG,
         PROFILES.PAP.SEAH_KIAN_PENG,
-        PROFILES.PAP.FATIMAH_LATEEF,
+        PROFILES.PAP.MOHD_FAHMI_ALIMAN,
       ],
       confirmed: false,
     },
