@@ -152,7 +152,7 @@ const Index = () => {
       return;
     }
     const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
-    if (!ed?.properties?.id || !ed?.state?.visible) {
+    if (!ed?.properties?.id || !ed?.state?.visible || window?.innerWidth < 600) {
       setHovered(null);
       return;
     }
@@ -165,6 +165,7 @@ const Index = () => {
   };
 
   const handleClick = (ev) => {
+    console.log('ev: ', ev);
     const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
     if (!ed?.properties?.id || !ed?.state?.visible) {
       return;
