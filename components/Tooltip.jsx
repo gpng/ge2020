@@ -113,6 +113,7 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           </div>
         </div>
       ))}
+      <div className="click-message">Click for more information</div>
       <style jsx>{`
         .tooltip-root {
           overflow: hidden;
@@ -199,6 +200,12 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           background: transparent;
         }
 
+        .click-message {
+          margin-top: 0.5rem;
+          font-size: 0.8rem;
+          display: none;
+        }
+
         @media only screen and (max-width: 600px) {
           .tooltip-root {
             top: 50%;
@@ -216,6 +223,12 @@ const VirusMarker = ({ x, y, id, onClose }) => {
           .button-close {
             display: inline-block;
             pointer-events: auto;
+          }
+        }
+
+        @media (hover: hover) {
+          .click-message {
+            display: block;
           }
         }
       `}</style>
