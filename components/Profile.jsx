@@ -16,6 +16,7 @@ const Profile = ({ image, color, name }) => {
           width: 3rem;
           justify-content: flex-start;
           margin-left: 0.5rem;
+          margin-bottom: 0.4rem;
         }
 
         .image-wrapper {

@@ -20,6 +20,7 @@ import META from '../constants/meta';
 import { ED_DATA, PARTIES } from '../data';
 import boundaryGeojson from '../data/boundaries.json';
 import { PARTY_COLORS } from '../constants/styles';
+import InfoPanel from '../components/InfoPanel';
 
 const initialViewState = {
   longitude: 103.80871128739545,
@@ -44,6 +45,7 @@ const Index = () => {
 
   const [hovered, setHovered] = useState(null);
   const prevHovered = useRef(null);
+  const [selected, setSelected] = useState(null);
 
   const [selectedEd, setSelectedEd] = useState('all');
 
@@ -163,18 +165,21 @@ const Index = () => {
   };
 
   const handleClick = (ev) => {
-    if (ev?.pointerType !== 'touch') return;
     const ed = ev?.features?.find((x) => x.layer.id === fillLayerId);
     if (!ed?.properties?.id || !ed?.state?.visible) {
-      setHovered(null);
       return;
     }
-    setHovered({
-      id: ed?.properties?.id,
-      featureId: ed?.id,
-      x: ev.point[0],
-      y: ev.point[1],
-    });
+    setSelected(ed?.properties?.id);
+    // if (!ed?.properties?.id || !ed?.state?.visible) {
+    //   setHovered(null);
+    //   return;
+    // }
+    // setHovered({
+    //   id: ed?.properties?.id,
+    //   featureId: ed?.id,
+    //   x: ev.point[0],
+    //   y: ev.point[1],
+    // });
   };
 
   const handlePartyChange = (ev) => {
@@ -224,6 +229,7 @@ const Index = () => {
       x: (window?.innerWidth ?? 0) / 2,
       y: (window?.innerHeight ?? 0) / 2,
     });
+    setSelected(id);
   };
 
   useEffect(() => {
@@ -344,6 +350,7 @@ const Index = () => {
               onClose={() => setHovered(null)}
             />
           )}
+          {selected && <InfoPanel selected={selected} setSelected={setSelected} />}
         </div>
         <style jsx>
           {`
@@ -368,7 +375,7 @@ const Index = () => {
               position: fixed;
               top: 1rem;
               left: 1rem;
-              z-index: 1;
+              z-index: 4;
             }
 
             .ed-select-container {
