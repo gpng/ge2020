@@ -1348,7 +1348,7 @@ export const ED_DATA = [
       members: [
         PROFILES.PAP.K_SHANMUGAM,
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
-        PROFILES.PAP.LEE_BEE_WAH,
+        PROFILES.PAP.CARRIE_TAN,
         PROFILES.PAP.LOUIS_NG,
       ],
       confirmed: false,
