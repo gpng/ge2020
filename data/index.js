@@ -1249,12 +1249,12 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.LEE_HSIEN_LOONG,
-        PROFILES.PAP.ANG_HIN_KEE,
-        PROFILES.PAP.INTAN_AZURA_MOKHTAR,
+        PROFILES.PAP.NG_LING_LING,
+        PROFILES.PAP.NADIA_AHMAD,
         PROFILES.PAP.GAN_THIAM_PO,
         PROFILES.PAP.DARRYL_DAVID,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
