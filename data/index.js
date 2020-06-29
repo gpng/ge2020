@@ -1416,11 +1416,6 @@ export const ED_DATA = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
-        members: [],
-        confirmed: false,
-      },
-      {
         party: PARTIES.PV.id,
         members: [],
         confirmed: false,
