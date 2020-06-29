@@ -1517,7 +1517,7 @@ export const ED_DATA = [
         PROFILES.PAP.XIE_YAO_QUAN,
         PROFILES.PAP.SHAWN_HUANG,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
