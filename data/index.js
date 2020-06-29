@@ -867,9 +867,9 @@ export const ED_DATA = [
         PROFILES.PAP.JOSEPHINE_TEO,
         PROFILES.PAP.HENG_CHEE_HOW,
         PROFILES.PAP.DENISE_PHUA,
-        PROFILES.PAP.LILY_NEO,
+        PROFILES.PAP.WAN_RIZAL,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
