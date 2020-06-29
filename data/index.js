@@ -1017,7 +1017,7 @@ export const ED_DATA = [
         PROFILES.PAP.SEAH_KIAN_PENG,
         PROFILES.PAP.FATIMAH_LATEEF,
       ],
-      confirmed: true,
+      confirmed: false,
     },
     opposition: [
       {
