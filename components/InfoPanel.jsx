@@ -313,6 +313,10 @@ const InfoPanel = ({ selected, setSelected }) => {
               width: 100vw;
               top: 0;
             }
+
+            .header {
+              margin-top: 6rem;
+            }
           }
         `}
       </style>

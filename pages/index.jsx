@@ -411,6 +411,12 @@ const Index = () => {
               right: 1rem;
               z-index: 1;
             }
+
+            @media only screen and (max-width: 600px) {
+              .checkbox-container {
+                display: none;
+              }
+            }
           `}
         </style>
       </div>
