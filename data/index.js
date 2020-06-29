@@ -1696,7 +1696,23 @@ export const ED_DATA = [
     id: 'PS',
     featureId: 6,
     name: 'POTONG PASIR',
-    electors: 18551,
+    electors: 19740,
+    history: {
+      2011: {
+        electors: 17327,
+        results: [
+          { name: 'PAP', votes: 7992, votesPerc: 50.36 },
+          { name: 'SPP', votes: 7878, votesPerc: 49.64 },
+        ],
+      },
+      2015: {
+        electors: 17407,
+        results: [
+          { name: 'PAP', votes: 10581, votesPerc: 66.41 },
+          { name: 'SPP', votes: 5353, votesPerc: 33.59 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
@@ -1718,7 +1734,7 @@ export const ED_DATA = [
     id: 'BK',
     featureId: 8,
     name: 'BUKIT BATOK',
-    electors: 29389,
+    electors: 29950,
     history: {
       2015: {
         electors: 27077,
@@ -1750,7 +1766,23 @@ export const ED_DATA = [
     id: 'HN',
     featureId: 15,
     name: 'HONG KAH NORTH',
-    electors: 23519,
+    electors: 28071,
+    history: {
+      2011: {
+        electors: 27701,
+        results: [
+          { name: 'PAP', votes: 18156, votesPerc: 70.61 },
+          { name: 'SPP', votes: 7556, votesPerc: 29.39 },
+        ],
+      },
+      2015: {
+        electors: 28145,
+        results: [
+          { name: 'PAP', votes: 19612, votesPerc: 74.76 },
+          { name: 'SPP', votes: 6621, votesPerc: 25.24 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.AMY_KHOR],
@@ -1772,7 +1804,23 @@ export const ED_DATA = [
     id: 'JR',
     featureId: 9,
     name: 'JURONG',
-    electors: 129933,
+    electors: 131234,
+    history: {
+      2011: {
+        electors: 125276,
+        results: [
+          { name: 'PAP', votes: 76595, votesPerc: 66.96 },
+          { name: 'NSP', votes: 37786, votesPerc: 33.04 },
+        ],
+      },
+      2015: {
+        electors: 130498,
+        results: [
+          { name: 'PAP', votes: 95080, votesPerc: 79.28 },
+          { name: 'SF', votes: 24848, votesPerc: 20.72 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1812,7 +1860,23 @@ export const ED_DATA = [
     id: 'BS',
     featureId: 13,
     name: 'BISHAN-TOA PAYOH',
-    electors: 100036,
+    electors: 101366,
+    history: {
+      2011: {
+        electors: 122492,
+        results: [
+          { name: 'PAP', votes: 62385, votesPerc: 56.93 },
+          { name: 'SPP', votes: 47205, votesPerc: 43.07 },
+        ],
+      },
+      2015: {
+        electors: 129975,
+        results: [
+          { name: 'PAP', votes: 86514, votesPerc: 73.59 },
+          { name: 'SPP', votes: 31049, votesPerc: 26.41 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1850,7 +1914,23 @@ export const ED_DATA = [
     id: 'TM',
     featureId: 16,
     name: 'TAMPINES',
-    electors: 147249,
+    electors: 151708,
+    history: {
+      2011: {
+        electors: 137532,
+        results: [
+          { name: 'PAP', votes: 72728, votesPerc: 57.22 },
+          { name: 'NSP', votes: 54381, votesPerc: 42.78 },
+        ],
+      },
+      2015: {
+        electors: 143518,
+        results: [
+          { name: 'PAP', votes: 95202, votesPerc: 72.06 },
+          { name: 'NSP', votes: 36920, votesPerc: 27.94 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -1884,7 +1964,7 @@ export const ED_DATA = [
     id: 'SK',
     featureId: 20,
     name: 'SENGKANG',
-    electors: 117546,
+    electors: 120166,
     current: {
       party: PARTIES.PAP.id,
       members: [],
@@ -1916,7 +1996,23 @@ export const ED_DATA = [
     id: 'AJ',
     featureId: 17,
     name: 'ALJUNIED',
-    electors: 150303,
+    electors: 151007,
+    history: {
+      2011: {
+        electors: 143148,
+        results: [
+          { name: 'WP', votes: 72289, votesPerc: 54.72 },
+          { name: 'PAP', votes: 59829, votesPerc: 45.28 },
+        ],
+      },
+      2015: {
+        electors: 148142,
+        results: [
+          { name: 'WP', votes: 69929, votesPerc: 50.95 },
+          { name: 'PAP', votes: 67317, votesPerc: 49.05 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.WP.id,
       members: [
@@ -1950,7 +2046,7 @@ export const ED_DATA = [
     id: 'KR',
     featureId: 21,
     name: 'KEBUN BARU',
-    electors: 22413,
+    electors: 22653,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
@@ -1972,7 +2068,16 @@ export const ED_DATA = [
     id: 'MY',
     featureId: 27,
     name: 'MARSILING-YEW TEE',
-    electors: 114243,
+    electors: 117176,
+    history: {
+      2015: {
+        electors: 148142,
+        results: [
+          { name: 'PAP', votes: 68485, votesPerc: 68.73 },
+          { name: 'SDP', votes: 31157, votesPerc: 31.27 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -2004,7 +2109,23 @@ export const ED_DATA = [
     id: 'SB',
     featureId: 30,
     name: 'SEMBAWANG',
-    electors: 139724,
+    electors: 147876,
+    history: {
+      2011: {
+        electors: 142459,
+        results: [
+          { name: 'PAP', votes: 84252, votesPerc: 63.9 },
+          { name: 'SDP', votes: 47605, votesPerc: 36.1 },
+        ],
+      },
+      2015: {
+        electors: 144672,
+        results: [
+          { name: 'PAP', votes: 96639, votesPerc: 72.28 },
+          { name: 'NSP', votes: 37067, votesPerc: 27.72 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
