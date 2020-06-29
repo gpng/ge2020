@@ -736,6 +736,18 @@ export const PROFILES = {
       name: 'James Gomez',
       image: 'james_gomez.jpg',
     },
+    ALFRED_TAN: {
+      name: 'Alfred Tan',
+      image: 'alfred_tan.png',
+    },
+    MIN_CHEONG: {
+      name: 'Min Cheong',
+      image: 'min_cheong.png',
+    },
+    ROBIN_LOW: {
+      name: 'Robin Low',
+      image: 'robin_low.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
