@@ -1132,7 +1132,7 @@ export const ED_DATA = [
         electors: 99300,
         results: [
           { name: 'PAP', votes: 71091, votesPerc: 78.57 },
-          { name: 'WP', votes: 19392, votesPerc: 21.43 },
+          { name: 'RP', votes: 19392, votesPerc: 21.43 },
         ],
       },
     },
@@ -1304,7 +1304,7 @@ export const ED_DATA = [
         electors: 187396,
         results: [
           { name: 'PAP', votes: 125021, votesPerc: 72.89 },
-          { name: 'SDP', votes: 46508, votesPerc: 27.11 },
+          { name: 'SDA', votes: 46508, votesPerc: 27.11 },
         ],
       },
     },
