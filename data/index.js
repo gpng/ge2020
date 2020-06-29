@@ -494,6 +494,10 @@ export const PROFILES = {
       name: 'Ong Ye Kung',
       image: 'ong_ye_kung.jpg',
     },
+    XIE_YAO_QUAN: {
+      name: 'Xie Yao Quan',
+      image: 'xie_yao_quan.jpg',
+    },
   },
   PSP: {
     TAN_CHENG_BOCK: {
@@ -1508,10 +1512,10 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.THARMAN,
-        PROFILES.PAP.DESMOND_LEE,
-        PROFILES.PAP.ANG_WEI_NENG,
         PROFILES.PAP.RAHAYU_MAHZAM,
         PROFILES.PAP.TAN_WU_MENG,
+        PROFILES.PAP.XIE_YAO_QUAN,
+        PROFILES.PAP.SHAWN_HUANG,
       ],
       confirmed: false,
     },
