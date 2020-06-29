@@ -1,3 +1,5 @@
+import { WALKOVER } from '../constants';
+
 export const PARTIES = {
   PAP: { id: 'PAP', name: "People's Action Party", logo: 'PAP.png' },
   WP: {
@@ -827,7 +829,20 @@ export const ED_DATA = [
     id: 'TP',
     featureId: 2,
     name: 'TANJONG PAGAR',
-    electors: 132598,
+    electors: 134642,
+    history: {
+      2011: {
+        electors: 139771,
+        results: WALKOVER,
+      },
+      2015: {
+        electors: 130752,
+        results: [
+          { name: 'PAP', votes: 90448, votesPerc: 77.71 },
+          { name: 'SF', votes: 25953, votesPerc: 22.29 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -867,7 +882,16 @@ export const ED_DATA = [
     id: 'JB',
     featureId: 3,
     name: 'JALAN BESAR',
-    electors: 106578,
+    electors: 107936,
+    history: {
+      2015: {
+        electors: 102540,
+        results: [
+          { name: 'PAP', votes: 63561, votesPerc: 67.73 },
+          { name: 'WP', votes: 30283, votesPerc: 32.27 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [
@@ -899,7 +923,23 @@ export const ED_DATA = [
     id: 'PI',
     featureId: 5,
     name: 'PIONEER',
-    electors: 24769,
+    electors: 24672,
+    history: {
+      2011: {
+        electors: 25745,
+        results: [
+          { name: 'PAP', votes: 14593, votesPerc: 60.73 },
+          { name: 'NSP', votes: 9437, votesPerc: 9437 },
+        ],
+      },
+      2015: {
+        electors: 25458,
+        results: [
+          { name: 'PAP', votes: 17994, votesPerc: 71.84 },
+          { name: 'NSP', votes: 5578, votesPerc: 23.66 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.CEDRIC_FOO],
@@ -1460,6 +1500,16 @@ export const ED_DATA = [
     featureId: 8,
     name: 'BUKIT BATOK',
     electors: 29389,
+    history: {
+      2015: {
+        electors: 27077,
+        results: [
+          { name: 'PAP', votes: 18204, votesPerc: 72.99 },
+          { name: 'SDP', votes: 6585, votesPerc: 26.4 },
+          { name: 'INDIE', votes: 150, votesPerc: 0.6 },
+        ],
+      },
+    },
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.MURALI_PILLAI],

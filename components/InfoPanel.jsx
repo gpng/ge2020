@@ -8,6 +8,7 @@ import { Close } from './icons';
 import { COLORS, PARTY_COLORS } from '../constants/styles';
 import { ED_DATA, PARTIES } from '../data';
 import Profile from './Profile';
+import { WALKOVER } from '../constants';
 
 const InfoPanel = ({ selected, setSelected }) => {
   const [data, setData] = useState();
@@ -114,6 +115,42 @@ const InfoPanel = ({ selected, setSelected }) => {
               </div>
             </div>
           ))}
+          {data.history && (
+            <div className="history">
+              <div className="title">Election History</div>
+              {[2011, 2015].map((year) => {
+                const history = data.history[year];
+                if (!history) return null;
+                return (
+                  <div className="history-row" key={year}>
+                    <div className="year">{year}</div>
+                    <div className="history-electors">
+                      {history.electors.toLocaleString()} Electors
+                    </div>
+                    <div className="results">
+                      {history.results === WALKOVER ? (
+                        <div className="result-row walkover">Walkover</div>
+                      ) : (
+                        history.results.map((x, i) => (
+                          <div
+                            className={classNames('result-row', {
+                              'result-row--win': i === 0,
+                            })}
+                            key={x.name}
+                          >
+                            <div className="result-name">{x.name}</div>
+                            <div className="result-votes">
+                              {`${x.votes.toLocaleString()} (${x.votesPerc}%)`}
+                            </div>
+                          </div>
+                        ))
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
       <style jsx>
@@ -213,6 +250,45 @@ const InfoPanel = ({ selected, setSelected }) => {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+          }
+
+          .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+
+          .history {
+            margin-top: 1rem;
+          }
+
+          .history-row {
+            margin-top: 1rem;
+          }
+
+          .year {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+          }
+
+          .result-row {
+            margin-top: 0.5rem;
+            display: flex;
+          }
+
+          .result-row--win {
+            color: green;
+          }
+
+          .walkover {
+            font-weight: bold;
+            color: green;
+          }
+
+          .result-name {
+            flex: 0 0 4rem;
+            min-width: 1px;
+            font-weight: bold;
           }
 
           @media only screen and (max-width: 600px) {
