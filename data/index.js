@@ -1165,8 +1165,9 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.S_ISWARAN,
-        PROFILES.PAP.LIM_HNG_KIANG,
-        PROFILES.PAP.PATRICK_TAY,
+        PROFILES.PAP.DESMOND_LEE,
+        PROFILES.PAP.RACHEL_ONG,
+        PROFILES.PAP.ANG_WEI_NENG,
         PROFILES.PAP.FOO_MEE_HAR,
       ],
       confirmed: false,
