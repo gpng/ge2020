@@ -1297,7 +1297,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.YIP_HON_WENG],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
