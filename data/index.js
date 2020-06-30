@@ -855,6 +855,36 @@ export const PROFILES = {
       image: 'lim_tean.jpg',
     },
   },
+  RP: {
+    KENNETH_JEYARETNAM: {
+      name: 'Kenneth Jeyaretnam',
+      image: 'kenneth_jeyaretnam.jpg',
+    },
+    ANDY_ZHU: {
+      name: 'Andy Zhu',
+      image: 'andy_zhu.png',
+    },
+    NORAINI_YUNUS: {
+      name: 'Noraini Yunus',
+      image: 'noraini_yunus.jpg',
+    },
+    DARREN_SOH: {
+      name: 'Darren Soh',
+      image: 'darren_soh.jpg',
+    },
+    GURDEV_SINGH: {
+      name: 'Gurdev Singh',
+      image: 'gurdev_singh.jpg',
+    },
+    MAHABOOB_BATCHA: {
+      name: 'Mahaboob Batcha',
+      image: 'mahaboob_batcha.jpg',
+    },
+    CHARLES_YEO: {
+      name: 'Charles Yeo',
+      image: 'charles_yeo.jpg',
+    },
+  },
   INDIE: {
     RONNIE_LAI: {
       name: 'Victor Ronnie Lai',
@@ -1493,8 +1523,14 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.RP.id,
-        members: [],
-        confirmed: false,
+        members: [
+          PROFILES.RP.KENNETH_JEYARETNAM,
+          PROFILES.RP.ANDY_ZHU,
+          PROFILES.RP.NORAINI_YUNUS,
+          PROFILES.RP.CHARLES_YEO,
+          PROFILES.RP.DARREN_SOH,
+        ],
+        confirmed: true,
       },
     ],
   },
