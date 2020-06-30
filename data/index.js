@@ -512,6 +512,18 @@ export const PROFILES = {
       name: 'Lee Hong Chuang',
       image: 'lee_hong_chuang.jpg',
     },
+    SHAMSUL_KAMAR: {
+      name: 'Shamsul Kamar',
+      image: 'shamsun_kamar.jpg',
+    },
+    CHUA_ENG_LEONG: {
+      name: 'Chua Eng Leong',
+      image: 'chua_eng_leong.jpg',
+    },
+    CHAN_HUI_YUH: {
+      name: 'Chan Hui Yuh',
+      image: 'chan_hui_yuh.jpg',
+    },
   },
   PSP: {
     TAN_CHENG_BOCK: {
@@ -2117,8 +2129,14 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.PAP.id,
-        members: [PROFILES.PAP.LIM_BOON_HENG, PROFILES.PAP.VICTOR_LYE],
-        confirmed: false,
+        members: [
+          PROFILES.PAP.VICTOR_LYE,
+          PROFILES.PAP.SHAMSUL_KAMAR,
+          PROFILES.PAP.ALEX_YEO,
+          PROFILES.PAP.CHUA_ENG_LEONG,
+          PROFILES.PAP.CHAN_HUI_YUH,
+        ],
+        confirmed: true,
       },
     ],
   },
