@@ -1036,7 +1036,7 @@ export const ED_DATA = [
           PROFILES.PV.NOR_AZLAN_SULAIMAN,
           PROFILES.PV.MICHAEL_FANG,
         ],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
