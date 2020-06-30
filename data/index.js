@@ -500,6 +500,14 @@ export const PROFILES = {
       name: 'Xie Yao Quan',
       image: 'xie_yao_quan.jpg',
     },
+    LIM_BOON_HENG: {
+      name: 'Lim Boon Heng',
+      image: 'lim_boon_heng.jpg',
+    },
+    VICTOR_LYE: {
+      name: 'Victor Lye',
+      image: 'victor_lye.jpg',
+    },
   },
   PSP: {
     TAN_CHENG_BOCK: {
@@ -2013,7 +2021,7 @@ export const ED_DATA = [
         PROFILES.PAP.LAM_PIN_MIN,
         PROFILES.PAP.RAYMOND_LYE,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -2073,7 +2081,7 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.PAP.id,
-        members: [],
+        members: [PROFILES.PAP.LIM_BOON_HENG, PROFILES.PAP.VICTOR_LYE],
         confirmed: false,
       },
     ],
