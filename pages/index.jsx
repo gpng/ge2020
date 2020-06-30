@@ -373,6 +373,14 @@ const Index = () => {
           )}
           {selected && <InfoPanel selected={selected} setSelected={setSelected} />}
         </div>
+        <a
+          className="attr-vercel"
+          href="https://vercel.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img src="/static/icons/powered-by-vercel.svg" alt="vercel" />
+        </a>
         <style jsx>
           {`
             .root {
@@ -418,9 +426,23 @@ const Index = () => {
               z-index: 1;
             }
 
+            .attr-vercel {
+              position: absolute;
+              bottom: 2rem;
+              left: 0.5rem;
+            }
+
+            .attr-vercel > img {
+              height: 2rem;
+            }
+
             @media only screen and (max-width: 600px) {
               .checkbox-container {
                 display: none;
+              }
+
+              .attr-vercel > img {
+                height: 1.5rem;
               }
             }
           `}
