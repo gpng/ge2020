@@ -756,6 +756,14 @@ export const PROFILES = {
       name: 'Khung Wai Yeen',
       image: 'khung_wai_yeen.jpg',
     },
+    PAUL_TAMBYAH: {
+      name: 'Paul Tambyah',
+      image: 'paul_tambyah.jpg',
+    },
+    TAN_JEE_SAY: {
+      name: 'Tan Jee Say',
+      image: 'tan_jee_say.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
@@ -1303,7 +1311,13 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [],
+        members: [
+          PROFILES.SDP.PAUL_TAMBYAH,
+          PROFILES.SDP.TAN_JEE_SAY,
+          PROFILES.SDP.JAMES_GOMEZ,
+          PROFILES.SDP.MIN_CHEONG,
+          PROFILES.SDP.ALFRED_TAN,
+        ],
         confirmed: false,
       },
     ],
