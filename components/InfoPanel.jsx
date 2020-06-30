@@ -177,6 +177,29 @@ const InfoPanel = ({ selected, setSelected }) => {
               })}
             </div>
           )}
+          <div className="resources">
+            <div className="title">More Resources</div>
+            <div className="resources-row">
+              <a
+                className="link-resource"
+                href="https://app.eservice.eld.gov.sg/voter/postalcodeenquiry.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Check your Electoral Division using postcode
+              </a>
+            </div>
+            <div>
+              <a
+                className="link-resource"
+                href="https://app.eservice.eld.gov.sg/Voter/PollingStationEnquiry.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Find your polling station and timeslot
+              </a>
+            </div>
+          </div>
           <div className="footer">
             <button
               type="button"
@@ -312,7 +335,7 @@ const InfoPanel = ({ selected, setSelected }) => {
           }
 
           .history {
-            margin-top: 1rem;
+            margin-top: 2rem;
           }
 
           .history-row {
@@ -357,6 +380,18 @@ const InfoPanel = ({ selected, setSelected }) => {
           }
 
           .link-manifesto {
+            font-size: 0.8rem;
+          }
+
+          .resources {
+            margin-top: 3rem;
+          }
+
+          .resources-row {
+            margin: 0.5rem 0;
+          }
+
+          .link-resource {
             font-size: 0.8rem;
           }
 
