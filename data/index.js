@@ -508,6 +508,10 @@ export const PROFILES = {
       name: 'Victor Lye',
       image: 'victor_lye.jpg',
     },
+    LEE_HONG_CHUANG: {
+      name: 'Lee Hong Chuang',
+      image: 'lee_hong_chuang.jpg',
+    },
   },
   PSP: {
     TAN_CHENG_BOCK: {
@@ -1127,8 +1131,8 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.PAP.id,
-        members: [],
-        confirmed: false,
+        members: [PROFILES.PAP.LEE_HONG_CHUANG],
+        confirmed: true,
       },
     ],
   },
