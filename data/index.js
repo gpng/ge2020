@@ -1420,7 +1420,7 @@ export const ED_DATA = [
         PROFILES.PAP.LIM_SWEE_SAY,
         PROFILES.PAP.MOHAMAD_MALIKI,
         PROFILES.PAP.JESSICA_TAN,
-        PROFILES.PAP.LEE_YI_SHYAN,
+        PROFILES.PAP.TAN_KIAT_HOW,
         PROFILES.PAP.CHERYL_CHAN,
       ],
       confirmed: false,
