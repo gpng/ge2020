@@ -1451,13 +1451,13 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [
-        PROFILES.PAP.LIM_SWEE_SAY,
+        PROFILES.PAP.HENG_SWEE_KEAT,
         PROFILES.PAP.MOHAMAD_MALIKI,
         PROFILES.PAP.JESSICA_TAN,
         PROFILES.PAP.TAN_KIAT_HOW,
         PROFILES.PAP.CHERYL_CHAN,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
