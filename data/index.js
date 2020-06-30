@@ -1359,8 +1359,9 @@ export const ED_DATA = [
       members: [
         PROFILES.PAP.TEO_CHEE_HEAN,
         PROFILES.PAP.JANIL_PUTHUCHEARY,
-        PROFILES.PAP.ZAINAL_BIN_SAPARI,
-        PROFILES.PAP.TEO_SER_LUCK,
+        PROFILES.PAP.SHARAEL_TAHA,
+        PROFILES.PAP.YEO_WAN_LING,
+        PROFILES.PAP.DESMOND_TAN,
       ],
       confirmed: false,
     },
