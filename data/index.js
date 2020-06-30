@@ -1260,7 +1260,7 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.KOH_POH_KOON],
+      members: [PROFILES.PAP.YIP_HON_WENG],
       confirmed: false,
     },
     opposition: [
