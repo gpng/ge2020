@@ -752,6 +752,10 @@ export const PROFILES = {
       name: 'Benjamin Pwee',
       image: 'benjamin_pwee.jpg',
     },
+    KHUNG_WAI_YEEN: {
+      name: 'Khung Wai Yeen',
+      image: 'khung_wai_yeen.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
@@ -2120,10 +2124,10 @@ export const ED_DATA = [
         members: [
           PROFILES.SDP.BRYAN_LIM,
           PROFILES.SDP.DAMANHURI_ABAS,
-          PROFILES.SDP.JAMES_GOMEZ,
+          PROFILES.SDP.KHUNG_WAI_YEEN,
           PROFILES.SDP.BENJAMIN_PWEE,
         ],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
