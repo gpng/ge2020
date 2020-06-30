@@ -1436,7 +1436,7 @@ export const ED_DATA = [
         PROFILES.PAP.YEO_WAN_LING,
         PROFILES.PAP.DESMOND_TAN,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1449,17 +1449,6 @@ export const ED_DATA = [
           PROFILES.PV.VIGNESWARI_RAMACHANDRAN,
         ],
         confirmed: true,
-      },
-      {
-        party: PARTIES.SDA.id,
-        members: [
-          PROFILES.SDA.DESMOND_LIM,
-          PROFILES.SDA.ABU_MOHAMED,
-          PROFILES.SDA.HARMINDER_PAL_SINGH,
-          PROFILES.SDA.KUSWADI_ATNAWI,
-          PROFILES.SDA.KELVIN_ONG,
-        ],
-        confirmed: false,
       },
     ],
   },
