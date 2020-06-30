@@ -1339,11 +1339,6 @@ export const ED_DATA = [
         members: [PROFILES.PSP.KAYLA_LOW],
         confirmed: true,
       },
-      {
-        party: PARTIES.RP.id,
-        members: [],
-        confirmed: false,
-      },
     ],
   },
   {
@@ -1624,20 +1619,20 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [
         PROFILES.PAP.GAN_KIM_YONG,
-        PROFILES.PAP.ZAQY_MOHAMAD,
-        PROFILES.PAP.YEE_CHIA_HSING,
         PROFILES.PAP.LOW_YEN_LING,
+        PROFILES.PAP.DON_WEE,
+        PROFILES.PAP.ZHULKARNAIN_ABDUL_RAHIM,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [
+          PROFILES.PSP.FRANCIS_YUEN,
           PROFILES.PSP.TAN_MENG_WAH,
           PROFILES.PSP.CHOO_SHAUN_MING,
           PROFILES.PSP.ABDUL_RAHMAN,
-          PROFILES.PSP.FRANCIS_YUEN,
         ],
         confirmed: true,
       },
