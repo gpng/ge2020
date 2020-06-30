@@ -842,6 +842,30 @@ export const PROFILES = {
       name: 'Spencer Ng',
       image: 'spencer_ng.jpg',
     },
+    MOHAMAD_RIDZWAN: {
+      name: 'Mohamad Ridzwan',
+    },
+    EUGENE_YEO: {
+      name: 'Eugene Yeo Ren Yuan',
+    },
+    CHOONG_HON_HENG: {
+      name: 'Choong Hon Heng ',
+    },
+    VINCENT_NG: {
+      name: 'Vincent Ng Kian Guan',
+    },
+    IVAN_YEO: {
+      name: 'Ivan Yeo Tiong Boon',
+    },
+    SEBASTIAN_TEO: {
+      name: 'Sebastian Teo',
+    },
+    YADZETH_HAIRIS: {
+      name: 'Yadzeth Hairis',
+    },
+    SATHIN_RAVINDRAN: {
+      name: 'Sathin Ravindran',
+    },
   },
   SDA: {
     ABU_MOHAMED: {
@@ -928,6 +952,9 @@ export const PROFILES = {
       name: 'Charles Yeo',
       image: 'charles_yeo.jpg',
     },
+    KUMAR_APPAVOO: {
+      name: 'Kumar Appavoo',
+    },
   },
   INDIE: {
     RONNIE_LAI: {
@@ -937,6 +964,9 @@ export const PROFILES = {
     OOI_BOON_EWE: {
       name: 'Ooi Boon Ewe',
       image: 'ooi_boon_ewe.jpg',
+    },
+    CHEANG_PENG_WAH: {
+      name: 'Cheang Peng Wah',
     },
   },
 };
@@ -1076,6 +1106,11 @@ export const ED_DATA = [
         members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: true,
       },
+      {
+        party: PARTIES.INDIE.id,
+        members: [PROFILES.INDIE.CHEANG_PENG_WAH],
+        confirmed: true,
+      },
     ],
   },
   {
@@ -1112,7 +1147,7 @@ export const ED_DATA = [
       {
         party: PARTIES.SDP.id,
         members: [PROFILES.SDP.ROBIN_LOW],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
@@ -1221,8 +1256,14 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.WP.id,
-        members: [],
-        confirmed: false,
+        members: [
+          PROFILES.WP.YEE_JENN_JONG,
+          PROFILES.WP.RON_TAN,
+          PROFILES.WP.NATHANIEL_KOH,
+          PROFILES.WP.MUHAMMAD_FADLI,
+          PROFILES.WP.MUHAMMAD_AZHAR,
+        ],
+        confirmed: true,
       },
     ],
   },
@@ -1265,7 +1306,7 @@ export const ED_DATA = [
         PROFILES.PAP.ANG_WEI_NENG,
         PROFILES.PAP.FOO_MEE_HAR,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1689,7 +1730,7 @@ export const ED_DATA = [
         PROFILES.PAP.LOUIS_NG,
         PROFILES.PAP.DERRICK_GOH,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1727,7 +1768,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TIN_PEI_LING],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1771,8 +1812,8 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.RP.id,
-        members: [],
-        confirmed: false,
+        members: [PROFILES.RP.KUMAR_APPAVOO],
+        confirmed: true,
       },
     ],
   },
@@ -2017,7 +2058,7 @@ export const ED_DATA = [
         PROFILES.PAP.SAKTIANDI_SUPAAT,
         PROFILES.PAP.CHEE_HONG_TAT,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -2077,8 +2118,14 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.NSP.id,
-        members: [PROFILES.NSP.RENO_FONG],
-        confirmed: false,
+        members: [
+          PROFILES.NSP.RENO_FONG,
+          PROFILES.NSP.MOHAMAD_RIDZWAN,
+          PROFILES.NSP.EUGENE_YEO,
+          PROFILES.NSP.CHOONG_HON_HENG,
+          PROFILES.NSP.VINCENT_NG,
+        ],
+        confirmed: true,
       },
     ],
   },
@@ -2283,8 +2330,14 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.NSP.id,
-        members: [PROFILES.NSP.SPENCER_NG],
-        confirmed: false,
+        members: [
+          PROFILES.NSP.SPENCER_NG,
+          PROFILES.NSP.IVAN_YEO,
+          PROFILES.NSP.SEBASTIAN_TEO,
+          PROFILES.NSP.YADZETH_HAIRIS,
+          PROFILES.NSP.SATHIN_RAVINDRAN,
+        ],
+        confirmed: true,
       },
     ],
   },
