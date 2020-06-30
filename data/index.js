@@ -748,6 +748,10 @@ export const PROFILES = {
       name: 'Robin Low',
       image: 'robin_low.jpg',
     },
+    BENJAMIN_PWEE: {
+      name: 'Benjamin Pwee',
+      image: 'benjamin_pwee.jpg',
+    },
   },
   RDU: {
     RAVI_PHILEMON: {
@@ -1012,7 +1016,7 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [],
+        members: [PROFILES.SDP.ROBIN_LOW],
         confirmed: false,
       },
     ],
@@ -1117,7 +1121,7 @@ export const ED_DATA = [
         PROFILES.PAP.SEAH_KIAN_PENG,
         PROFILES.PAP.MOHD_FAHMI_ALIMAN,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1732,7 +1736,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1906,6 +1910,7 @@ export const ED_DATA = [
         PROFILES.PAP.CHONG_KEE_HIONG,
         PROFILES.PAP.SAKTIANDI_SUPAAT,
         PROFILES.PAP.CHEE_HONG_TAT,
+        PROFILES.PAP.GAN_SIOW_HUANG,
       ],
       confirmed: false,
     },
@@ -2112,7 +2117,12 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [PROFILES.SDP.BRYAN_LIM, PROFILES.SDP.DAMANHURI_ABAS, PROFILES.SDP.JAMES_GOMEZ],
+        members: [
+          PROFILES.SDP.BRYAN_LIM,
+          PROFILES.SDP.DAMANHURI_ABAS,
+          PROFILES.SDP.JAMES_GOMEZ,
+          PROFILES.SDP.BENJAMIN_PWEE,
+        ],
         confirmed: false,
       },
     ],
