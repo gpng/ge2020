@@ -2031,7 +2031,7 @@ export const ED_DATA = [
         PROFILES.PAP.DESMOND_CHOO,
         PROFILES.PAP.KOH_POH_KOON,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
