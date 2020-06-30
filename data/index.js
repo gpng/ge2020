@@ -1239,14 +1239,14 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.TEO_HO_PIN],
-      confirmed: false,
+      members: [PROFILES.PAP.LIANG_ENG_HWA],
+      confirmed: true,
     },
     opposition: [
       {
         party: PARTIES.SDP.id,
-        members: [],
-        confirmed: false,
+        members: [PROFILES.SDP.PAUL_TAMBYAH],
+        confirmed: true,
       },
       {
         party: PARTIES.INDIE.id,
