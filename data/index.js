@@ -1449,6 +1449,17 @@ export const ED_DATA = [
         ],
         confirmed: true,
       },
+      {
+        party: PARTIES.SDA.id,
+        members: [
+          PROFILES.SDA.DESMOND_LIM,
+          PROFILES.SDA.HARMINDER_PAL_SINGH,
+          PROFILES.SDA.ABU_MOHAMED,
+          PROFILES.SDA.KELVIN_ONG,
+          PROFILES.SDA.KUSWADI_ATNAWI,
+        ],
+        confirmed: true,
+      },
     ],
   },
   {
