@@ -1907,6 +1907,14 @@ export const ED_DATA = [
           { name: 'INDIE', votes: 150, votesPerc: 0.6 },
         ],
       },
+      2016: {
+        electors: 25727,
+        byElection: true,
+        results: [
+          { name: 'PAP', votes: 14428, votesPerc: 61.21 },
+          { name: 'SDP', votes: 9142, votesPerc: 38.79 },
+        ],
+      },
     },
     current: {
       party: PARTIES.PAP.id,

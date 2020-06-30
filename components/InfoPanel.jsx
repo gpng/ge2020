@@ -119,12 +119,15 @@ const InfoPanel = ({ selected, setSelected }) => {
           {data.history && (
             <div className="history">
               <div className="title">Election History</div>
-              {[2011, 2015].map((year) => {
+              {[2011, 2015, 2016].map((year) => {
                 const history = data.history[year];
                 if (!history) return null;
                 return (
                   <div className="history-row" key={year}>
-                    <div className="year">{year}</div>
+                    <div className="year">
+                      {year}
+                      {history.byElection ? ' (By-election)' : ''}
+                    </div>
                     <div className="history-electors">
                       {history.electors.toLocaleString()} Electors
                     </div>
