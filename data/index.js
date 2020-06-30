@@ -879,8 +879,8 @@ export const PROFILES = {
     MOHAMED_NASSIR: {
       name: 'Mohamed Nassir Ismail',
     },
-    GOH_KEONG_WAH: {
-      name: 'Goh Keow Wah',
+    GILBERT_GOH: {
+      name: 'Gilbert Goh Keow Wah',
     },
     VIGNESWARI_RAMACHANDRAN: {
       name: 'Vigneswari Ramachandran',
@@ -1449,7 +1449,7 @@ export const ED_DATA = [
           PROFILES.PV.JIREH_LIM,
           PROFILES.PV.PRABU_RAMACHANDRAN,
           PROFILES.PV.MOHAMED_NASSIR,
-          PROFILES.PV.GOH_KEONG_WAH,
+          PROFILES.PV.GILBERT_GOH,
           PROFILES.PV.VIGNESWARI_RAMACHANDRAN,
         ],
         confirmed: true,
