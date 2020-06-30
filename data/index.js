@@ -1515,8 +1515,8 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.WP.id,
-        members: [],
-        confirmed: false,
+        members: [PROFILES.WP.TAN_CHEN_CHEN],
+        confirmed: true,
       },
       {
         party: PARTIES.PV.id,
