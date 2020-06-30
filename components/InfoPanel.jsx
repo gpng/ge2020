@@ -377,6 +377,7 @@ const InfoPanel = ({ selected, setSelected }) => {
             font-size: 0.8rem;
             border: none;
             text-decoration: underline;
+            background: transparent;
           }
 
           .link-manifesto {
