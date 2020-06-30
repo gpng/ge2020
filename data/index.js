@@ -700,7 +700,7 @@ export const PROFILES = {
       name: 'Dylan Ng Foo Eng',
       image: 'dylan_ng.jpg',
     },
-    JEROME_LIM: {
+    JAMUS_LIM: {
       name: 'Jamus Jerome Lim Chee Wui',
       image: 'jerome_lim.jpg',
     },
@@ -2074,12 +2074,12 @@ export const ED_DATA = [
       {
         party: PARTIES.WP.id,
         members: [
-          PROFILES.WP.LEE_LI_LIAN,
-          PROFILES.WP.JEROME_LIM,
+          PROFILES.WP.HE_TING_RU,
           PROFILES.WP.LOUIS_CHUA,
+          PROFILES.WP.JAMUS_LIM,
           PROFILES.WP.RAEESAH_BEGUM,
         ],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
