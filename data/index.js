@@ -1356,19 +1356,18 @@ export const ED_DATA = [
         PROFILES.PAP.CHRISTOPHER_DE_SOUZA,
         PROFILES.PAP.EDWARD_CHIA,
       ],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
         party: PARTIES.SDP.id,
         members: [
-          PROFILES.SDP.PAUL_TAMBYAH,
           PROFILES.SDP.TAN_JEE_SAY,
           PROFILES.SDP.JAMES_GOMEZ,
           PROFILES.SDP.MIN_CHEONG,
           PROFILES.SDP.ALFRED_TAN,
         ],
-        confirmed: false,
+        confirmed: true,
       },
     ],
   },
