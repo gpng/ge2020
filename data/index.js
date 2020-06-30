@@ -1018,8 +1018,8 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.CEDRIC_FOO],
-      confirmed: false,
+      members: [PROFILES.PAP.PATRICK_TAY],
+      confirmed: true,
     },
     opposition: [
       {
@@ -1028,13 +1028,8 @@ export const ED_DATA = [
         confirmed: true,
       },
       {
-        party: PARTIES.PV.id,
-        members: [],
-        confirmed: false,
-      },
-      {
-        party: PARTIES.INDIE.id,
-        members: [PROFILES.INDIE.RONNIE_LAI],
+        party: PARTIES.PSP.id,
+        members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: true,
       },
     ],
@@ -1876,7 +1871,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.AMY_KHOR],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
