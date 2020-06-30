@@ -1657,6 +1657,7 @@ export const ED_DATA = [
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
         PROFILES.PAP.CARRIE_TAN,
         PROFILES.PAP.LOUIS_NG,
+        PROFILES.PAP.DERRICK_GOH,
       ],
       confirmed: false,
     },
