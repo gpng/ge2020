@@ -1043,11 +1043,6 @@ export const ED_DATA = [
         members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: true,
       },
-      {
-        party: PARTIES.PSP.id,
-        members: [PROFILES.PSP.LIM_CHER_HONG],
-        confirmed: true,
-      },
     ],
   },
   {
@@ -1424,7 +1419,7 @@ export const ED_DATA = [
           PROFILES.SDA.KUSWADI_ATNAWI,
           PROFILES.SDA.KELVIN_ONG,
         ],
-        confirmed: true,
+        confirmed: false,
       },
       {
         party: PARTIES.PV.id,
