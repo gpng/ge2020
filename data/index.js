@@ -1037,7 +1037,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.GRACE_FU],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1318,7 +1318,7 @@ export const ED_DATA = [
         PROFILES.PAP.VIVIAN_BALAKRISHNAN,
         PROFILES.PAP.SIM_ANN,
         PROFILES.PAP.CHRISTOPHER_DE_SOUZA,
-        PROFILES.PAP.LIANG_ENG_HWA,
+        PROFILES.PAP.EDWARD_CHIA,
       ],
       confirmed: false,
     },
@@ -1732,7 +1732,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
@@ -1802,7 +1802,7 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.MURALI_PILLAI],
-      confirmed: false,
+      confirmed: true,
     },
     opposition: [
       {
