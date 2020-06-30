@@ -514,7 +514,7 @@ export const PROFILES = {
     },
     SHAMSUL_KAMAR: {
       name: 'Shamsul Kamar',
-      image: 'shamsun_kamar.jpg',
+      image: 'shamsul_kamar.jpg',
     },
     CHUA_ENG_LEONG: {
       name: 'Chua Eng Leong',
@@ -532,51 +532,51 @@ export const PROFILES = {
     },
     KUMARAN_PILLAI: {
       name: 'Kumaran Pillai',
-      image: 'kumaran_pillai.png',
+      image: 'kumaran_pillai.jpg',
     },
     MICHAEL_CHUA: {
       name: 'Michael Chua',
-      image: 'michael_chua.png',
+      image: 'michael_chua.jpg',
     },
     WENDY_LOW: {
       name: 'Wendy Low',
-      image: 'wendy_low.png',
+      image: 'wendy_low.jpg',
     },
     NADARAJAH_LOGANATHAN: {
       name: 'Nadarajah Loganathan',
-      image: 'nadarajah_loganathan.png',
+      image: 'nadarajah_loganathan.jpg',
     },
     DAMIEN_TAY: {
       name: 'Damien Tay Chye Seng',
-      image: 'damien_tay.png',
+      image: 'damien_tay.jpg',
     },
     FRANCIS_YUEN: {
       name: 'Francis Yuen',
-      image: 'francis_yuen.png',
+      image: 'francis_yuen.jpg',
     },
     HAZEL_POA: {
       name: 'Hazel Poa',
-      image: 'hazel_poa.png',
+      image: 'hazel_poa.jpg',
     },
     MUHAMMAD_TAUFIK: {
       name: 'Muhammad Taufik Bin Supan',
-      image: 'muhammad_taufik.png',
+      image: 'muhammad_taufik.jpg',
     },
     BRADLEY_BOWYER: {
       name: 'Bradley Bowyer',
-      image: 'bradley_bowyer.png',
+      image: 'bradley_bowyer.jpg',
     },
     SRI_NALLAKARUPPAN: {
       name: 'Sri Nallakaruppan',
-      image: 'sri_nallakaruppan.png',
+      image: 'sri_nallakaruppan.jpg',
     },
     GIGENE_WONG: {
       name: 'Gigene Wong',
-      image: 'gigene_wong.png',
+      image: 'gigene_wong.jpg',
     },
     TAN_MENG_WAH: {
       name: 'Tan Meng Wah',
-      image: 'tan_meng_wah.jpeg',
+      image: 'tan_meng_wah.jpg',
     },
     KAYLA_LOW: {
       name: 'Kayla Low',
@@ -588,97 +588,97 @@ export const PROFILES = {
     },
     CHOO_SHAUN_MING: {
       name: 'Choo Shaun Ming',
-      image: 'choo_shaun_ming.jpeg',
+      image: 'choo_shaun_ming.jpg',
     },
     HARISH_PILLAY: {
       name: 'Harish Pillay',
-      image: 'harish_pillay.jpeg',
+      image: 'harish_pillay.jpg',
     },
     ABAS_BIN_KASMANI: {
       name: `A'bas Bin Kasmani`,
-      image: 'abas_bin_kasmani.jpeg',
+      image: 'abas_bin_kasmani.jpg',
     },
     LEON_MUN_WAI: {
       name: 'Leong Mun Wai',
-      image: 'leong_mun_wai.png',
+      image: 'leong_mun_wai.jpg',
     },
     TERENCE_SOON: {
       name: 'Terence Soon',
-      image: 'terence_soon.png',
+      image: 'terence_soon.jpg',
     },
     ABDUL_RAHMAN: {
       name: 'Abdul Rahman',
-      image: 'abdul_rahman.png',
+      image: 'abdul_rahman.jpg',
     },
     KALA_MANICKAM: {
       name: 'Kala Manickam',
-      image: 'kala_manickam.png',
+      image: 'kala_manickam.jpg',
     },
     JEFFREY_KHOO: {
       name: 'Jeffrey Khoo Poh Tiong',
-      image: 'jeffrey_khoo.png',
+      image: 'jeffrey_khoo.jpg',
     },
     LIM_CHER_HONG: {
       name: 'Lim Cher Hong',
-      image: 'lim_cher_hong.png',
+      image: 'lim_cher_hong.jpg',
     },
   },
   WP: {
     LOW_THIA_KHIANG: {
       name: 'Low Thia Khiang',
-      image: 'low_thia_khiang.png',
+      image: 'low_thia_khiang.jpg',
     },
     SYLVIA_LIM: {
       name: 'Sylvia Lim Swee Lian',
-      image: 'sylvia_lim.png',
+      image: 'sylvia_lim.jpg',
     },
     MUHAMMAD_FAISAL: {
       name: 'Muhamad Faisal bin Abdul Manap',
-      image: 'muhammad_faisal.png',
+      image: 'muhammad_faisal.jpg',
     },
     PRITAM_SINGH: {
       name: 'Pritam Singh',
-      image: 'pritam_singh.png',
+      image: 'pritam_singh.jpg',
     },
     GERALD_GIAM: {
       name: 'Gerald Giam Yean Song',
-      image: 'gerald_giam.png',
+      image: 'gerald_giam.jpg',
     },
     LEE_LI_LIAN: {
       name: 'Lee Li Lian',
-      image: 'lee_li_lian.png',
+      image: 'lee_li_lian.jpg',
     },
     DENNIS_TAN: {
       name: 'Dennis Tan Lip Fong',
-      image: 'dennis_tan.png',
+      image: 'dennis_tan.jpg',
     },
     DANIEL_GOH: {
       name: 'Daniel Goh Pei Siong',
-      image: 'daniel_goh.png',
+      image: 'daniel_goh.jpg',
     },
     TERENCE_TAN: {
       name: 'Terence Tan Li-Chern',
-      image: 'terence_tan.png',
+      image: 'terence_tan.jpg',
     },
     LEON_PERERA: {
       name: 'Leon Perera',
-      image: 'leon_perera.png',
+      image: 'leon_perera.jpg',
     },
     PNG_ENG_HUAT: {
       name: 'Png Eng Huat',
-      image: 'png_eng_huat.png',
+      image: 'png_eng_huat.jpg',
     },
     CHEN_SHOW_MAO: {
       name: 'Chen Show Mao',
-      image: 'chen_show_mao.png',
+      image: 'chen_show_mao.jpg',
     },
     JOHN_YAM: {
       name: 'John Yam Poh Nam',
-      image: 'john_yam.png',
+      image: 'john_yam.jpg',
     },
     FIRUZ_KHAN: {
       name: 'Firuz Khan',
-      image: 'firuz_khan.png',
+      image: 'firuz_khan.jpg',
     },
     MUHAMMAD_AZHAR: {
       name: 'Muhammad Azhar Bin Abdul Latip',
@@ -762,11 +762,11 @@ export const PROFILES = {
     },
     ALFRED_TAN: {
       name: 'Alfred Tan',
-      image: 'alfred_tan.png',
+      image: 'alfred_tan.jpg',
     },
     MIN_CHEONG: {
       name: 'Min Cheong',
-      image: 'min_cheong.png',
+      image: 'min_cheong.jpg',
     },
     ROBIN_LOW: {
       name: 'Robin Low',
@@ -930,7 +930,7 @@ export const PROFILES = {
     },
     ANDY_ZHU: {
       name: 'Andy Zhu',
-      image: 'andy_zhu.png',
+      image: 'andy_zhu.jpg',
     },
     NORAINI_YUNUS: {
       name: 'Noraini Yunus',
@@ -970,6 +970,7 @@ export const PROFILES = {
     },
   },
 };
+
 export const ED_DATA = [
   {
     id: 'TP',
