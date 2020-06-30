@@ -894,6 +894,10 @@ export const PROFILES = {
     MICHAEL_FANG: {
       name: 'Michael Fang Amin',
     },
+    SIVAKUMARAN_CHELLAPPA: {
+      name: 'Sivakumaran Chellappa',
+      image: 'sivakumaran_chellappa.jpg',
+    },
   },
   RP: {
     KENNETH_JEYARETNAM: {
@@ -1799,8 +1803,8 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.PV.id,
-        members: [],
-        confirmed: false,
+        members: [PROFILES.PV.SIVAKUMARAN_CHELLAPPA],
+        confirmed: true,
       },
     ],
   },
