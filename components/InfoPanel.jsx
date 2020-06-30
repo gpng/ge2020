@@ -37,14 +37,14 @@ const InfoPanel = ({ selected, setSelected }) => {
         <div className="scrollable-container">
           <div className="title">Previous</div>
           <div className="row">
-            <span className="label-container">
+            <div className="label-container">
               <div className="party">
                 <span>{data.current.party}</span>
                 {PARTIES[data.current.party].logo && (
                   <img src={`/static/images/logos/${PARTIES[data.current.party].logo}`} alt="" />
                 )}
               </div>
-            </span>
+            </div>
             <div className="profiles">
               {data.current.members.map((d) => (
                 <Profile
@@ -59,7 +59,7 @@ const InfoPanel = ({ selected, setSelected }) => {
           </div>
           <div className="title">GE2020 Candidates</div>
           <div className="row">
-            <span className="label-container">
+            <div className="label-container">
               <div className="party">
                 <span>{data.incumbent.party}</span>
                 {PARTIES[data.incumbent.party].logo && (
@@ -74,7 +74,17 @@ const InfoPanel = ({ selected, setSelected }) => {
               >
                 {data.incumbent.confirmed ? 'Confirmed' : 'Unconfirmed'}
               </div>
-            </span>
+              {PARTIES[data.incumbent.party].manifesto && (
+                <a
+                  className="link-manifesto"
+                  href={PARTIES[data.incumbent.party].manifesto}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Manifesto
+                </a>
+              )}
+            </div>
             <div className="profiles">
               {data.incumbent.members.map((d) => (
                 <Profile
@@ -89,7 +99,7 @@ const InfoPanel = ({ selected, setSelected }) => {
           </div>
           {data.opposition.map((o) => (
             <div className="row" key={o.party}>
-              <span className="label-container">
+              <div className="label-container">
                 <div className="party">
                   <span>{o.party}</span>
                   {PARTIES[o.party].logo && (
@@ -104,7 +114,17 @@ const InfoPanel = ({ selected, setSelected }) => {
                 >
                   {o.confirmed ? 'Confirmed' : 'Unconfirmed'}
                 </div>
-              </span>
+                {PARTIES[o.party].manifesto && (
+                  <a
+                    className="link-manifesto"
+                    href={PARTIES[o.party].manifesto}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Manifesto
+                  </a>
+                )}
+              </div>
               <div className="profiles">
                 {o.members.map((d) => (
                   <Profile
@@ -260,11 +280,13 @@ const InfoPanel = ({ selected, setSelected }) => {
           .confirmed {
             color: green;
             font-size: 0.6rem;
+            margin-bottom: 0.25rem;
           }
 
           .unconfirmed {
             color: red;
             font-size: 0.6rem;
+            margin-bottom: 0.25rem;
           }
 
           .party {
@@ -332,6 +354,10 @@ const InfoPanel = ({ selected, setSelected }) => {
             font-size: 0.8rem;
             border: none;
             text-decoration: underline;
+          }
+
+          .link-manifesto {
+            font-size: 0.8rem;
           }
 
           @media only screen and (max-width: 600px) {
