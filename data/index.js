@@ -1032,8 +1032,8 @@ export const ED_DATA = [
     },
     incumbent: {
       party: PARTIES.PAP.id,
-      members: [PROFILES.PAP.CHONG_KEE_HIONG],
-      confirmed: false,
+      members: [PROFILES.PAP.GAN_SIOW_HUANG],
+      confirmed: true,
     },
     opposition: [
       {
@@ -1910,7 +1910,6 @@ export const ED_DATA = [
         PROFILES.PAP.CHONG_KEE_HIONG,
         PROFILES.PAP.SAKTIANDI_SUPAAT,
         PROFILES.PAP.CHEE_HONG_TAT,
-        PROFILES.PAP.GAN_SIOW_HUANG,
       ],
       confirmed: false,
     },
