@@ -849,6 +849,12 @@ export const PROFILES = {
       image: 'kelvin_ong.jpg',
     },
   },
+  PV: {
+    LIM_TEAN: {
+      name: 'Lim Tean',
+      image: 'lim_tean.jpg',
+    },
+  },
   INDIE: {
     RONNIE_LAI: {
       name: 'Victor Ronnie Lai',
@@ -1988,11 +1994,11 @@ export const ED_DATA = [
     incumbent: {
       party: PARTIES.PAP.id,
       members: [
-        PROFILES.PAP.HENG_SWEE_KEAT,
         PROFILES.PAP.MASAGOS_ZUKLIFI,
         PROFILES.PAP.BAEY_YAM_KENG,
         PROFILES.PAP.CHENG_LI_HUI,
         PROFILES.PAP.DESMOND_CHOO,
+        PROFILES.PAP.KOH_POH_KOON,
       ],
       confirmed: false,
     },
