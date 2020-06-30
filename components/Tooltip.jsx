@@ -41,7 +41,7 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
         <>
           <div className="row">
             <span className="label-container">
-              <div className="label">Current</div>
+              <div className="label">Previous</div>
               <div className="party">
                 <span>{data.current.party}</span>
                 {PARTIES[data.current.party].logo && (
@@ -60,9 +60,9 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
               ))}
             </div>
           </div>
+          <div className="title">GE2020 Candidates</div>
           <div className="row">
             <span className="label-container">
-              <div className="label">Incumbent</div>
               <div className="party">
                 <span>{data.incumbent.party}</span>
                 {PARTIES[data.incumbent.party].logo && (
@@ -92,7 +92,6 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
           {data.opposition.map((o) => (
             <div className="row" key={o.party}>
               <span className="label-container">
-                <div className="label">Opposition</div>
                 <div className="party">
                   <span>{o.party}</span>
                   {PARTIES[o.party].logo && (
@@ -213,6 +212,10 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
           margin-top: 0.5rem;
           font-size: 0.8rem;
           display: none;
+        }
+
+        .title {
+          font-weight: bold;
         }
 
         @media only screen and (max-width: 600px) {

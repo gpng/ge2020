@@ -37,7 +37,7 @@ const InfoPanel = ({ selected, setSelected }) => {
         <div className="scrollable-container">
           <div className="row">
             <span className="label-container">
-              <div className="label">Current</div>
+              <div className="label">Previous</div>
               <div className="party">
                 <span>{data.current.party}</span>
                 {PARTIES[data.current.party].logo && (
@@ -48,6 +48,7 @@ const InfoPanel = ({ selected, setSelected }) => {
             <div className="profiles">
               {data.current.members.map((d) => (
                 <Profile
+                  large
                   key={d.name}
                   image={d.image}
                   name={d.name}
@@ -56,9 +57,9 @@ const InfoPanel = ({ selected, setSelected }) => {
               ))}
             </div>
           </div>
+          <div className="title">GE2020 Candidates</div>
           <div className="row">
             <span className="label-container">
-              <div className="label">Incumbent</div>
               <div className="party">
                 <span>{data.incumbent.party}</span>
                 {PARTIES[data.incumbent.party].logo && (
@@ -77,6 +78,7 @@ const InfoPanel = ({ selected, setSelected }) => {
             <div className="profiles">
               {data.incumbent.members.map((d) => (
                 <Profile
+                  large
                   key={d.name}
                   image={d.image}
                   name={d.name}
@@ -88,7 +90,6 @@ const InfoPanel = ({ selected, setSelected }) => {
           {data.opposition.map((o) => (
             <div className="row" key={o.party}>
               <span className="label-container">
-                <div className="label">Opposition</div>
                 <div className="party">
                   <span>{o.party}</span>
                   {PARTIES[o.party].logo && (
@@ -107,6 +108,7 @@ const InfoPanel = ({ selected, setSelected }) => {
               <div className="profiles">
                 {o.members.map((d) => (
                   <Profile
+                    large
                     key={d.name}
                     image={d.image}
                     name={d.name}
@@ -240,7 +242,7 @@ const InfoPanel = ({ selected, setSelected }) => {
           .label-container {
             flex: 0 0 5rem;
             min-width: 1px;
-            font-size: 0.8rem;
+            font-size: 1rem;
           }
 
           .label {
@@ -284,7 +286,7 @@ const InfoPanel = ({ selected, setSelected }) => {
 
           .title {
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
           }
 
           .history {
@@ -297,7 +299,7 @@ const InfoPanel = ({ selected, setSelected }) => {
 
           .year {
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 0.2rem;
           }
 
