@@ -43,8 +43,12 @@ const Profile = ({ image, color, name }) => {
   );
 };
 
+Profile.defaultProps = {
+  image: 'person.svg',
+};
+
 Profile.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   color: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };

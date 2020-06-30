@@ -870,6 +870,21 @@ export const PROFILES = {
       name: 'Lim Tean',
       image: 'lim_tean.jpg',
     },
+    JIREH_LIM: {
+      name: 'Jireh Lim',
+    },
+    PRABU_RAMACHANDRAN: {
+      name: 'Prabu Ramachandran',
+    },
+    MOHAMED_NASSIR: {
+      name: 'Mohamed Nassir Ismail',
+    },
+    GOH_KEONG_WAH: {
+      name: 'Goh Keow Wah',
+    },
+    VIGNESWARI_RAMACHANDRAN: {
+      name: 'Vigneswari Ramachandran',
+    },
   },
   RP: {
     KENNETH_JEYARETNAM: {
@@ -1411,6 +1426,17 @@ export const ED_DATA = [
     },
     opposition: [
       {
+        party: PARTIES.PV.id,
+        members: [
+          PROFILES.PV.JIREH_LIM,
+          PROFILES.PV.PRABU_RAMACHANDRAN,
+          PROFILES.PV.MOHAMED_NASSIR,
+          PROFILES.PV.GOH_KEONG_WAH,
+          PROFILES.PV.VIGNESWARI_RAMACHANDRAN,
+        ],
+        confirmed: true,
+      },
+      {
         party: PARTIES.SDA.id,
         members: [
           PROFILES.SDA.DESMOND_LIM,
@@ -1419,11 +1445,6 @@ export const ED_DATA = [
           PROFILES.SDA.KUSWADI_ATNAWI,
           PROFILES.SDA.KELVIN_ONG,
         ],
-        confirmed: false,
-      },
-      {
-        party: PARTIES.PV.id,
-        members: [],
         confirmed: false,
       },
     ],
