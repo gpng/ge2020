@@ -35,9 +35,9 @@ const InfoPanel = ({ selected, setSelected }) => {
       </header>
       {data && (
         <div className="scrollable-container">
+          <div className="title">Previous</div>
           <div className="row">
             <span className="label-container">
-              <div className="label">Previous</div>
               <div className="party">
                 <span>{data.current.party}</span>
                 {PARTIES[data.current.party].logo && (

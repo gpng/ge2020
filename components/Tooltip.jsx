@@ -39,9 +39,9 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
       </div>
       {showContent && (
         <>
+          <div className="title">Previous</div>
           <div className="row">
             <span className="label-container">
-              <div className="label">Previous</div>
               <div className="party">
                 <span>{data.current.party}</span>
                 {PARTIES[data.current.party].logo && (
@@ -195,6 +195,7 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
         }
 
         .header {
+          margin-bottom: 0.5rem;
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
@@ -215,6 +216,7 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
         }
 
         .title {
+          font-size: 0.9rem;
           font-weight: bold;
         }
 
