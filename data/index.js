@@ -1273,11 +1273,6 @@ export const ED_DATA = [
         members: [PROFILES.SDP.PAUL_TAMBYAH],
         confirmed: true,
       },
-      {
-        party: PARTIES.INDIE.id,
-        members: [PROFILES.INDIE.OOI_BOON_EWE],
-        confirmed: true,
-      },
     ],
   },
   {
