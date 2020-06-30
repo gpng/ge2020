@@ -885,6 +885,15 @@ export const PROFILES = {
     VIGNESWARI_RAMACHANDRAN: {
       name: 'Vigneswari Ramachandran',
     },
+    LEONG_SZE_HIAN: {
+      name: 'Leong Sze Hian',
+    },
+    NOR_AZLAN_SULAIMAN: {
+      name: 'Nor Azlan Sulaiman',
+    },
+    MICHAEL_FANG: {
+      name: 'Michael Fang Amin',
+    },
   },
   RP: {
     KENNETH_JEYARETNAM: {
@@ -1017,7 +1026,12 @@ export const ED_DATA = [
     opposition: [
       {
         party: PARTIES.PV.id,
-        members: [],
+        members: [
+          PROFILES.PV.LIM_TEAN,
+          PROFILES.PV.LEONG_SZE_HIAN,
+          PROFILES.PV.NOR_AZLAN_SULAIMAN,
+          PROFILES.PV.MICHAEL_FANG,
+        ],
         confirmed: false,
       },
     ],
@@ -1580,11 +1594,6 @@ export const ED_DATA = [
         party: PARTIES.WP.id,
         members: [PROFILES.WP.TAN_CHEN_CHEN],
         confirmed: true,
-      },
-      {
-        party: PARTIES.PV.id,
-        members: [],
-        confirmed: false,
       },
     ],
   },
