@@ -2285,7 +2285,7 @@ export const ED_DATA = [
         PROFILES.PAP.LAWRENCE_WONG,
         PROFILES.PAP.ALEX_YAM,
         PROFILES.PAP.ONG_TENG_KOON,
-        PROFILES.PAP.BOB_SHAW,
+        PROFILES.PAP.ZAQY_MOHAMAD,
       ],
     },
     incumbent: {
