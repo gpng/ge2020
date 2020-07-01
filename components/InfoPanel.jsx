@@ -199,6 +199,26 @@ const InfoPanel = ({ selected, setSelected }) => {
                 Find your polling station and timeslot
               </a>
             </div>
+            <div>
+              <a
+                className="link-resource"
+                href="https://cape.commons.yale-nus.edu.sg/2020/06/23/ge2020portal/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yale-NUS Voter Education One-Stop Portal
+              </a>
+            </div>
+            <div>
+              <a
+                className="link-resource"
+                href="https://ge2020voter.carrd.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resource hub for first-time voters
+              </a>
+            </div>
           </div>
           <div className="footer">
             <button
