@@ -189,7 +189,7 @@ const InfoPanel = ({ selected, setSelected }) => {
                 Check your Electoral Division using postcode
               </a>
             </div>
-            <div>
+            <div className="resources-row">
               <a
                 className="link-resource"
                 href="https://app.eservice.eld.gov.sg/Voter/PollingStationEnquiry.aspx"
@@ -199,7 +199,7 @@ const InfoPanel = ({ selected, setSelected }) => {
                 Find your polling station and timeslot
               </a>
             </div>
-            <div>
+            <div className="resources-row">
               <a
                 className="link-resource"
                 href="https://cape.commons.yale-nus.edu.sg/2020/06/23/ge2020portal/"
@@ -209,7 +209,7 @@ const InfoPanel = ({ selected, setSelected }) => {
                 Yale-NUS Voter Education One-Stop Portal
               </a>
             </div>
-            <div>
+            <div className="resources-row">
               <a
                 className="link-resource"
                 href="https://ge2020voter.carrd.co/"
