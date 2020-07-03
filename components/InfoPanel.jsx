@@ -81,7 +81,17 @@ const InfoPanel = ({ selected, setSelected }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Manifesto
+                  Party Manifesto
+                </a>
+              )}
+              {data.incumbent.manifesto && (
+                <a
+                  className="link-manifesto"
+                  href={data.incumbent.manifesto}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Area Manifesto
                 </a>
               )}
             </div>
@@ -121,7 +131,17 @@ const InfoPanel = ({ selected, setSelected }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Manifesto
+                    Party Manifesto
+                  </a>
+                )}
+                {o.manifesto && (
+                  <a
+                    className="link-manifesto"
+                    href={o.manifesto}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Area Manifesto
                   </a>
                 )}
               </div>
@@ -401,7 +421,10 @@ const InfoPanel = ({ selected, setSelected }) => {
           }
 
           .link-manifesto {
-            font-size: 0.8rem;
+            display: block;
+            white-space: nowrap;
+            font-size: 0.7rem;
+            margin-bottom: 0.2rem;
           }
 
           .resources {

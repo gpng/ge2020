@@ -2085,6 +2085,7 @@ export const ED_DATA = [
         PROFILES.PAP.CHEE_HONG_TAT,
       ],
       confirmed: true,
+      manifesto: 'https://drive.google.com/file/d/1a1VHrDxUBkLZtrCvlmZ8VXaDYcL0V_Dv/view',
     },
     opposition: [
       {
