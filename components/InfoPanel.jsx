@@ -17,6 +17,8 @@ const InfoPanel = ({ selected, setSelected }) => {
     setData(edData);
   }, [selected]);
 
+  const voteKey = data?.incumbent?.actual ? 'actual' : 'sample';
+
   return (
     <div className="info-panel-root">
       <div className="placeholder" />
@@ -35,6 +37,37 @@ const InfoPanel = ({ selected, setSelected }) => {
       </header>
       {data && (
         <div className="scrollable-container">
+          <div className="title">
+            {data.incumbent.actual ? 'GE2020 Final Results' : 'GE2020 Sample Count'}
+          </div>
+          <div className="history-row current-row">
+            <div className="electors">{data.electorsVoted.toLocaleString()} Electors Voted</div>
+            <div className="results">
+              <div
+                className={classNames('result-row', {
+                  'result-row--win':
+                    data.incumbent[voteKey] ===
+                    Math.max(data.incumbent[voteKey], ...data.opposition.map((d) => d[voteKey])),
+                })}
+              >
+                <div className="result-name">{data.incumbent.party}</div>
+                <div className="result-votes">{`${data.incumbent[voteKey]}%`}</div>
+              </div>
+              {data.opposition.map((o) => (
+                <div
+                  key={o.party}
+                  className={classNames('result-row', {
+                    'result-row--win':
+                      o[voteKey] ===
+                      Math.max(data.incumbent[voteKey], ...data.opposition.map((d) => d[voteKey])),
+                  })}
+                >
+                  <div className="result-name">{o.party}</div>
+                  <div className="result-votes">{`${o[voteKey]}%`}</div>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="title">Previous</div>
           <div className="row">
             <div className="label-container">
@@ -380,6 +413,10 @@ const InfoPanel = ({ selected, setSelected }) => {
 
           .history-row {
             margin-top: 1rem;
+          }
+
+          .current-row {
+            margin-bottom: 2rem;
           }
 
           .year {

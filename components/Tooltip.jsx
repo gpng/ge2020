@@ -26,6 +26,8 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
 
   if (!data) return null;
 
+  const voteKey = data.incumbent?.actual ? 'actual' : 'sample';
+
   return (
     <button type="button" className="tooltip-root">
       <div className="header">
@@ -39,6 +41,37 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
       </div>
       {showContent && (
         <>
+          <div className="title ">
+            {data.incumbent.actual ? 'GE2020 Final Results' : 'GE2020 Sample Count'}
+          </div>
+          <div className="history-row">
+            <div className="electors">{data.electorsVoted.toLocaleString()} Electors Voted</div>
+            <div className="results">
+              <div
+                className={classNames('result-row', {
+                  'result-row--win':
+                    data.incumbent[voteKey] ===
+                    Math.max(data.incumbent[voteKey], ...data.opposition.map((d) => d[voteKey])),
+                })}
+              >
+                <div className="result-name">{data.incumbent.party}</div>
+                <div className="result-votes">{`${data.incumbent[voteKey]}%`}</div>
+              </div>
+              {data.opposition.map((o) => (
+                <div
+                  key={o.party}
+                  className={classNames('result-row', {
+                    'result-row--win':
+                      o[voteKey] ===
+                      Math.max(data.incumbent[voteKey], ...data.opposition.map((d) => d[voteKey])),
+                  })}
+                >
+                  <div className="result-name">{o.party}</div>
+                  <div className="result-votes">{`${o[voteKey]}%`}</div>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="title">Previous</div>
           <div className="row">
             <span className="label-container">
@@ -150,6 +183,11 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
           font-size: 0.8rem;
         }
 
+        .history-row {
+          padding: 0.5rem 0;
+          margin-bottom: 1rem;
+        }
+
         .row {
           padding: 0.5rem 0;
           display: flex;
@@ -217,6 +255,21 @@ const VirusMarker = ({ x, y, id, onClose, showContent }) => {
 
         .title {
           font-size: 0.9rem;
+          font-weight: bold;
+        }
+
+        .result-row {
+          margin-top: 0.5rem;
+          display: flex;
+        }
+
+        .result-row--win {
+          color: green;
+        }
+
+        .result-name {
+          flex: 0 0 4rem;
+          min-width: 1px;
           font-weight: bold;
         }
 

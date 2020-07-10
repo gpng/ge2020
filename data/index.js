@@ -994,6 +994,7 @@ export const ED_DATA = [
     featureId: 2,
     name: 'TANJONG PAGAR',
     electors: 134642,
+    electorsVoted: 134494,
     history: {
       2011: {
         electors: 139771,
@@ -1027,6 +1028,7 @@ export const ED_DATA = [
         PROFILES.PAP.ALVIN_TAN,
       ],
       confirmed: true,
+      sample: 37,
     },
     opposition: [
       {
@@ -1039,6 +1041,7 @@ export const ED_DATA = [
           PROFILES.PSP.ABAS_BIN_KASMANI,
         ],
         confirmed: true,
+        sample: 67,
       },
     ],
   },
@@ -1047,6 +1050,7 @@ export const ED_DATA = [
     featureId: 3,
     name: 'JALAN BESAR',
     electors: 107936,
+    electorsVoted: 107720,
     history: {
       2015: {
         electors: 102540,
@@ -1074,6 +1078,7 @@ export const ED_DATA = [
         PROFILES.PAP.WAN_RIZAL,
       ],
       confirmed: true,
+      sample: 67,
     },
     opposition: [
       {
@@ -1085,6 +1090,7 @@ export const ED_DATA = [
           PROFILES.PV.MICHAEL_FANG,
         ],
         confirmed: true,
+        sample: 33,
       },
     ],
   },
@@ -1093,6 +1099,7 @@ export const ED_DATA = [
     featureId: 5,
     name: 'PIONEER',
     electors: 24672,
+    electorsVoted: 24653,
     history: {
       2011: {
         electors: 25745,
@@ -1117,17 +1124,23 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.PATRICK_TAY],
       confirmed: true,
+      sample: 66,
+      actual: 61.98,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: true,
+        sample: 32,
+        actual: 35.24,
       },
       {
         party: PARTIES.INDIE.id,
         members: [PROFILES.INDIE.CHEANG_PENG_WAH],
         confirmed: true,
+        sample: 2,
+        actual: 2.78,
       },
     ],
   },
@@ -1136,6 +1149,7 @@ export const ED_DATA = [
     featureId: 7,
     name: 'YUHUA',
     electors: 21376,
+    electorsVoted: 21351,
     history: {
       2011: {
         electors: 23195,
@@ -1160,12 +1174,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.GRACE_FU],
       confirmed: true,
+      sample: 69,
     },
     opposition: [
       {
         party: PARTIES.SDP.id,
         members: [PROFILES.SDP.ROBIN_LOW],
         confirmed: true,
+        sample: 31,
       },
     ],
   },
@@ -1174,6 +1190,7 @@ export const ED_DATA = [
     featureId: 12,
     name: 'MARYMOUNT',
     electors: 23444,
+    electorsVoted: 23431,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.JOSEPHINE_TEO],
@@ -1182,12 +1199,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.GAN_SIOW_HUANG],
       confirmed: true,
+      sample: 54,
+      actual: 55.04,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.ANG_YONG_GUAN],
         confirmed: true,
+        sample: 46,
+        actual: 44.96,
       },
     ],
   },
@@ -1196,6 +1217,7 @@ export const ED_DATA = [
     featureId: 14,
     name: 'HOUGANG',
     electors: 26468,
+    electorsVoted: 26463,
     history: {
       2011: {
         electors: 24560,
@@ -1220,12 +1242,14 @@ export const ED_DATA = [
       party: PARTIES.WP.id,
       members: [PROFILES.WP.DENNIS_TAN],
       confirmed: true,
+      sample: 58,
     },
     opposition: [
       {
         party: PARTIES.PAP.id,
         members: [PROFILES.PAP.LEE_HONG_CHUANG],
         confirmed: true,
+        sample: 42,
       },
     ],
   },
@@ -1234,6 +1258,7 @@ export const ED_DATA = [
     featureId: 10,
     name: 'MARINE PARADE',
     electors: 139738,
+    electorsVoted: 139622,
     history: {
       2011: {
         electors: 154451,
@@ -1270,6 +1295,7 @@ export const ED_DATA = [
         PROFILES.PAP.MOHD_FAHMI_ALIMAN,
       ],
       confirmed: true,
+      sample: 57,
     },
     opposition: [
       {
@@ -1282,6 +1308,7 @@ export const ED_DATA = [
           PROFILES.WP.MUHAMMAD_AZHAR,
         ],
         confirmed: true,
+        sample: 43,
       },
     ],
   },
@@ -1290,6 +1317,7 @@ export const ED_DATA = [
     featureId: 11,
     name: 'WEST COAST',
     electors: 146251,
+    electorsVoted: 146089,
     history: {
       2011: {
         electors: 121045,
@@ -1325,6 +1353,7 @@ export const ED_DATA = [
         PROFILES.PAP.FOO_MEE_HAR,
       ],
       confirmed: true,
+      sample: 52,
     },
     opposition: [
       {
@@ -1337,6 +1366,7 @@ export const ED_DATA = [
           PROFILES.PSP.NADARAJAH_LOGANATHAN,
         ],
         confirmed: true,
+        sample: 48,
       },
     ],
   },
@@ -1345,6 +1375,7 @@ export const ED_DATA = [
     featureId: 18,
     name: 'BUKIT PANJANG',
     electors: 35497,
+    electorsVoted: 35437,
     history: {
       2011: {
         electors: 33053,
@@ -1369,12 +1400,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.LIANG_ENG_HWA],
       confirmed: true,
+      sample: 59,
+      actual: 53.74,
     },
     opposition: [
       {
         party: PARTIES.SDP.id,
         members: [PROFILES.SDP.PAUL_TAMBYAH],
         confirmed: true,
+        sample: 41,
+        actual: 46.26,
       },
     ],
   },
@@ -1383,6 +1418,7 @@ export const ED_DATA = [
     featureId: 19,
     name: 'YIO CHU KANG',
     electors: 26005,
+    electorsVoted: 25962,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.KOH_POH_KOON],
@@ -1391,12 +1427,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.YIP_HON_WENG],
       confirmed: true,
+      sample: 61,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.KAYLA_LOW],
         confirmed: true,
+        sample: 39,
       },
     ],
   },
@@ -1405,6 +1443,7 @@ export const ED_DATA = [
     featureId: 23,
     name: 'HOLLAND-BUKIT TIMAH',
     electors: 115012,
+    electorsVoted: 114973,
     history: {
       2011: {
         electors: 91607,
@@ -1439,6 +1478,7 @@ export const ED_DATA = [
         PROFILES.PAP.EDWARD_CHIA,
       ],
       confirmed: true,
+      sample: 68,
     },
     opposition: [
       {
@@ -1450,6 +1490,7 @@ export const ED_DATA = [
           PROFILES.SDP.ALFRED_TAN,
         ],
         confirmed: true,
+        sample: 32,
       },
     ],
   },
@@ -1458,6 +1499,7 @@ export const ED_DATA = [
     featureId: 24,
     name: 'PASIR RIS-PUNGGOL',
     electors: 166587,
+    electorsVoted: 166556,
     history: {
       2011: {
         electors: 168971,
@@ -1495,6 +1537,7 @@ export const ED_DATA = [
         PROFILES.PAP.DESMOND_TAN,
       ],
       confirmed: true,
+      sample: 63,
     },
     opposition: [
       {
@@ -1507,6 +1550,7 @@ export const ED_DATA = [
           PROFILES.PV.VIGNESWARI_RAMACHANDRAN,
         ],
         confirmed: true,
+        sample: 12,
       },
       {
         party: PARTIES.SDA.id,
@@ -1518,6 +1562,7 @@ export const ED_DATA = [
           PROFILES.SDA.KUSWADI_ATNAWI,
         ],
         confirmed: true,
+        sample: 25,
       },
     ],
   },
@@ -1526,6 +1571,7 @@ export const ED_DATA = [
     featureId: 25,
     name: 'EAST COAST',
     electors: 121772,
+    electorsVoted: 121644,
     history: {
       2011: {
         electors: 120324,
@@ -1561,6 +1607,7 @@ export const ED_DATA = [
         PROFILES.PAP.CHERYL_CHAN,
       ],
       confirmed: true,
+      sample: 54,
     },
     opposition: [
       {
@@ -1573,6 +1620,7 @@ export const ED_DATA = [
           PROFILES.WP.ABDUL_SHARIFF,
         ],
         confirmed: true,
+        sample: 46,
       },
     ],
   },
@@ -1581,6 +1629,7 @@ export const ED_DATA = [
     featureId: 26,
     name: 'ANG MO KIO',
     electors: 185465,
+    electorsVoted: 185261,
     history: {
       2011: {
         electors: 179071,
@@ -1618,6 +1667,7 @@ export const ED_DATA = [
         PROFILES.PAP.DARRYL_DAVID,
       ],
       confirmed: true,
+      sample: 72,
     },
     opposition: [
       {
@@ -1630,6 +1680,7 @@ export const ED_DATA = [
           PROFILES.RP.DARREN_SOH,
         ],
         confirmed: true,
+        sample: 28,
       },
     ],
   },
@@ -1638,6 +1689,7 @@ export const ED_DATA = [
     featureId: 22,
     name: 'PUNGGOL WEST',
     electors: 26579,
+    electorsVoted: 26587,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SUN_XUELING],
@@ -1646,12 +1698,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SUN_XUELING],
       confirmed: true,
+      sample: 65,
+      actual: 60.97,
     },
     opposition: [
       {
         party: PARTIES.WP.id,
         members: [PROFILES.WP.TAN_CHEN_CHEN],
         confirmed: true,
+        sample: 35,
+        actual: 39.03,
       },
     ],
   },
@@ -1660,6 +1716,7 @@ export const ED_DATA = [
     featureId: 28,
     name: 'CHUA CHU KANG',
     electors: 106693,
+    electorsVoted: 106632,
     history: {
       2011: {
         electors: 158648,
@@ -1694,6 +1751,7 @@ export const ED_DATA = [
         PROFILES.PAP.ZHULKARNAIN_ABDUL_RAHIM,
       ],
       confirmed: true,
+      sample: 59,
     },
     opposition: [
       {
@@ -1705,6 +1763,7 @@ export const ED_DATA = [
           PROFILES.PSP.ABDUL_RAHMAN,
         ],
         confirmed: true,
+        sample: 41,
       },
     ],
   },
@@ -1713,6 +1772,7 @@ export const ED_DATA = [
     featureId: 29,
     name: 'NEE SOON',
     electors: 147047,
+    electorsVoted: 146902,
     history: {
       2011: {
         electors: 148290,
@@ -1749,6 +1809,7 @@ export const ED_DATA = [
         PROFILES.PAP.DERRICK_GOH,
       ],
       confirmed: true,
+      sample: 61,
     },
     opposition: [
       {
@@ -1761,6 +1822,7 @@ export const ED_DATA = [
           PROFILES.PSP.BRADLEY_BOWYER,
         ],
         confirmed: true,
+        sample: 39,
       },
     ],
   },
@@ -1769,6 +1831,7 @@ export const ED_DATA = [
     featureId: 4,
     name: 'MACPHERSON',
     electors: 28564,
+    electorsVoted: 28513,
     history: {
       2015: {
         electors: 28511,
@@ -1787,12 +1850,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.TIN_PEI_LING],
       confirmed: true,
+      sample: 73,
+      actual: 71.74,
     },
     opposition: [
       {
         party: PARTIES.PPP.id,
         members: [PROFILES.PPP.GOH_MENG_SENG],
         confirmed: true,
+        sample: 27,
+        actual: 28.26,
       },
     ],
   },
@@ -1801,6 +1868,7 @@ export const ED_DATA = [
     featureId: 31,
     name: 'RADIN MAS',
     electors: 24980,
+    electorsVoted: 24931,
     history: {
       2011: {
         electors: 31014,
@@ -1826,12 +1894,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.MELVIN_YONG],
       confirmed: true,
+      sample: 76,
+      actual: 74.03,
     },
     opposition: [
       {
         party: PARTIES.RP.id,
         members: [PROFILES.RP.KUMAR_APPAVOO],
         confirmed: true,
+        sample: 24,
+        actual: 25.97,
       },
     ],
   },
@@ -1840,6 +1912,7 @@ export const ED_DATA = [
     featureId: 1,
     name: 'MOUNTBATTEN',
     electors: 24267,
+    electorsVoted: 24246,
     history: {
       2011: {
         electors: 23731,
@@ -1864,12 +1937,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
       confirmed: true,
+      sample: 75,
     },
     opposition: [
       {
         party: PARTIES.PV.id,
         members: [PROFILES.PV.SIVAKUMARAN_CHELLAPPA],
         confirmed: true,
+        sample: 25,
       },
     ],
   },
@@ -1878,6 +1953,7 @@ export const ED_DATA = [
     featureId: 6,
     name: 'POTONG PASIR',
     electors: 19740,
+    electorsVoted: 19731,
     history: {
       2011: {
         electors: 17327,
@@ -1902,12 +1978,16 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
       confirmed: true,
+      sample: 61,
+      actual: 60.69,
     },
     opposition: [
       {
         party: PARTIES.SPP.id,
         members: [PROFILES.SPP.JOSE_RAYMOND],
         confirmed: true,
+        sample: 39,
+        actual: 39.31,
       },
     ],
   },
@@ -1916,6 +1996,7 @@ export const ED_DATA = [
     featureId: 8,
     name: 'BUKIT BATOK',
     electors: 29950,
+    electorsVoted: 29948,
     history: {
       2015: {
         electors: 27077,
@@ -1942,12 +2023,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.MURALI_PILLAI],
       confirmed: true,
+      sample: 57,
     },
     opposition: [
       {
         party: PARTIES.SDP.id,
         members: [PROFILES.SDP.CHEE_SOON_JUAN],
         confirmed: true,
+        sample: 43,
       },
     ],
   },
@@ -1956,6 +2039,7 @@ export const ED_DATA = [
     featureId: 15,
     name: 'HONG KAH NORTH',
     electors: 28071,
+    electorsVoted: 28046,
     history: {
       2011: {
         electors: 27701,
@@ -1980,12 +2064,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.AMY_KHOR],
       confirmed: true,
+      sample: 63,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.GIGENE_WONG],
         confirmed: true,
+        sample: 37,
       },
     ],
   },
@@ -1994,6 +2080,7 @@ export const ED_DATA = [
     featureId: 9,
     name: 'JURONG',
     electors: 131234,
+    electorsVoted: 131058,
     history: {
       2011: {
         electors: 125276,
@@ -2030,6 +2117,7 @@ export const ED_DATA = [
         PROFILES.PAP.SHAWN_HUANG,
       ],
       confirmed: true,
+      sample: 75,
     },
     opposition: [
       {
@@ -2042,6 +2130,7 @@ export const ED_DATA = [
           PROFILES.RDU.NICHOLAS_TANG,
         ],
         confirmed: true,
+        sample: 25,
       },
     ],
   },
@@ -2050,6 +2139,7 @@ export const ED_DATA = [
     featureId: 13,
     name: 'BISHAN-TOA PAYOH',
     electors: 101366,
+    electorsVoted: 101220,
     history: {
       2011: {
         electors: 122492,
@@ -2086,6 +2176,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       manifesto: 'https://drive.google.com/file/d/1a1VHrDxUBkLZtrCvlmZ8VXaDYcL0V_Dv/view',
+      sample: 67,
     },
     opposition: [
       {
@@ -2097,6 +2188,7 @@ export const ED_DATA = [
           PROFILES.SPP.MELVYN_CHIU,
         ],
         confirmed: true,
+        sample: 33,
       },
     ],
   },
@@ -2105,6 +2197,7 @@ export const ED_DATA = [
     featureId: 16,
     name: 'TAMPINES',
     electors: 151708,
+    electorsVoted: 151589,
     history: {
       2011: {
         electors: 137532,
@@ -2141,6 +2234,7 @@ export const ED_DATA = [
         PROFILES.PAP.KOH_POH_KOON,
       ],
       confirmed: true,
+      sample: 67,
     },
     opposition: [
       {
@@ -2153,6 +2247,7 @@ export const ED_DATA = [
           PROFILES.NSP.VINCENT_NG,
         ],
         confirmed: true,
+        sample: 33,
       },
     ],
   },
@@ -2161,6 +2256,7 @@ export const ED_DATA = [
     featureId: 20,
     name: 'SENGKANG',
     electors: 120166,
+    electorsVoted: 120100,
     current: {
       party: PARTIES.PAP.id,
       members: [],
@@ -2174,6 +2270,7 @@ export const ED_DATA = [
         PROFILES.PAP.RAYMOND_LYE,
       ],
       confirmed: true,
+      sample: 47,
     },
     opposition: [
       {
@@ -2185,6 +2282,7 @@ export const ED_DATA = [
           PROFILES.WP.RAEESAH_BEGUM,
         ],
         confirmed: true,
+        sample: 53,
       },
     ],
   },
@@ -2193,6 +2291,7 @@ export const ED_DATA = [
     featureId: 17,
     name: 'ALJUNIED',
     electors: 151007,
+    electorsVoted: 150821,
     history: {
       2011: {
         electors: 143148,
@@ -2229,6 +2328,7 @@ export const ED_DATA = [
         PROFILES.WP.LEON_PERERA,
       ],
       confirmed: true,
+      sample: 60,
     },
     opposition: [
       {
@@ -2241,6 +2341,7 @@ export const ED_DATA = [
           PROFILES.PAP.CHAN_HUI_YUH,
         ],
         confirmed: true,
+        sample: 40,
       },
     ],
   },
@@ -2249,6 +2350,7 @@ export const ED_DATA = [
     featureId: 21,
     name: 'KEBUN BARU',
     electors: 22653,
+    electorsVoted: 22623,
     current: {
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
@@ -2257,12 +2359,14 @@ export const ED_DATA = [
       party: PARTIES.PAP.id,
       members: [PROFILES.PAP.HENRY_KWEK],
       confirmed: true,
+      sample: 68,
     },
     opposition: [
       {
         party: PARTIES.PSP.id,
         members: [PROFILES.PSP.KUMARAN_PILLAI],
         confirmed: true,
+        sample: 32,
       },
     ],
   },
@@ -2271,6 +2375,7 @@ export const ED_DATA = [
     featureId: 27,
     name: 'MARSILING-YEW TEE',
     electors: 117176,
+    electorsVoted: 117077,
     history: {
       2015: {
         electors: 148142,
@@ -2298,6 +2403,7 @@ export const ED_DATA = [
         PROFILES.PAP.HANY_SOH,
       ],
       confirmed: true,
+      sample: 64,
     },
     opposition: [
       {
@@ -2309,6 +2415,7 @@ export const ED_DATA = [
           PROFILES.SDP.BENJAMIN_PWEE,
         ],
         confirmed: true,
+        sample: 36,
       },
     ],
   },
@@ -2317,6 +2424,7 @@ export const ED_DATA = [
     featureId: 30,
     name: 'SEMBAWANG',
     electors: 147876,
+    electorsVoted: 147786,
     history: {
       2011: {
         electors: 142459,
@@ -2353,6 +2461,7 @@ export const ED_DATA = [
         PROFILES.PAP.MARIAN_JAFAAR,
       ],
       confirmed: true,
+      sample: 69,
     },
     opposition: [
       {
@@ -2365,6 +2474,7 @@ export const ED_DATA = [
           PROFILES.NSP.SATHIN_RAVINDRAN,
         ],
         confirmed: true,
+        sample: 31,
       },
     ],
   },
