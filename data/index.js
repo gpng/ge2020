@@ -1028,7 +1028,8 @@ export const ED_DATA = [
         PROFILES.PAP.ALVIN_TAN,
       ],
       confirmed: true,
-      sample: 37,
+      sample: 67,
+      actual: 63.13,
     },
     opposition: [
       {
@@ -1041,7 +1042,8 @@ export const ED_DATA = [
           PROFILES.PSP.ABAS_BIN_KASMANI,
         ],
         confirmed: true,
-        sample: 67,
+        sample: 33,
+        actual: 36.87,
       },
     ],
   },
@@ -1079,6 +1081,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 67,
+      actual: 65.37,
     },
     opposition: [
       {
@@ -1091,6 +1094,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 33,
+        actual: 34.63,
       },
     ],
   },
@@ -1175,6 +1179,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.GRACE_FU],
       confirmed: true,
       sample: 69,
+      actual: 70.54,
     },
     opposition: [
       {
@@ -1182,6 +1187,7 @@ export const ED_DATA = [
         members: [PROFILES.SDP.ROBIN_LOW],
         confirmed: true,
         sample: 31,
+        actual: 29.46,
       },
     ],
   },
@@ -1243,6 +1249,7 @@ export const ED_DATA = [
       members: [PROFILES.WP.DENNIS_TAN],
       confirmed: true,
       sample: 58,
+      actual: 61.19,
     },
     opposition: [
       {
@@ -1250,6 +1257,7 @@ export const ED_DATA = [
         members: [PROFILES.PAP.LEE_HONG_CHUANG],
         confirmed: true,
         sample: 42,
+        actual: 38.81,
       },
     ],
   },
@@ -1296,6 +1304,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 57,
+      actual: 57.76,
     },
     opposition: [
       {
@@ -1309,6 +1318,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 43,
+        actual: 42.24,
       },
     ],
   },
@@ -1354,6 +1364,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 52,
+      actual: 51.69,
     },
     opposition: [
       {
@@ -1367,6 +1378,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 48,
+        actual: 48.31,
       },
     ],
   },
@@ -1428,6 +1440,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.YIP_HON_WENG],
       confirmed: true,
       sample: 61,
+      actual: 60.83,
     },
     opposition: [
       {
@@ -1435,6 +1448,7 @@ export const ED_DATA = [
         members: [PROFILES.PSP.KAYLA_LOW],
         confirmed: true,
         sample: 39,
+        actual: 39.17,
       },
     ],
   },
@@ -1479,6 +1493,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 68,
+      actual: 66.36,
     },
     opposition: [
       {
@@ -1491,6 +1506,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 32,
+        actual: 33.64,
       },
     ],
   },
@@ -1538,6 +1554,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 63,
+      actual: 64.15,
     },
     opposition: [
       {
@@ -1551,6 +1568,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 12,
+        actual: 12.18,
       },
       {
         party: PARTIES.SDA.id,
@@ -1563,6 +1581,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 25,
+        actual: 23.67,
       },
     ],
   },
@@ -1608,6 +1627,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 54,
+      actual: 53.41,
     },
     opposition: [
       {
@@ -1621,6 +1641,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 46,
+        actual: 46.59,
       },
     ],
   },
@@ -1668,6 +1689,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 72,
+      actual: 71.91,
     },
     opposition: [
       {
@@ -1681,6 +1703,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 28,
+        actual: 28.09,
       },
     ],
   },
@@ -1752,6 +1775,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 59,
+      actual: 58.64,
     },
     opposition: [
       {
@@ -1764,6 +1788,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 41,
+        actual: 41.36,
       },
     ],
   },
@@ -1810,6 +1835,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 61,
+      actual: 61.9,
     },
     opposition: [
       {
@@ -1823,6 +1849,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 39,
+        actual: 38.1,
       },
     ],
   },
@@ -1938,6 +1965,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
       confirmed: true,
       sample: 75,
+      actual: 73.84,
     },
     opposition: [
       {
@@ -1945,6 +1973,7 @@ export const ED_DATA = [
         members: [PROFILES.PV.SIVAKUMARAN_CHELLAPPA],
         confirmed: true,
         sample: 25,
+        actual: 26.16,
       },
     ],
   },
@@ -2024,6 +2053,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.MURALI_PILLAI],
       confirmed: true,
       sample: 57,
+      actual: 54.8,
     },
     opposition: [
       {
@@ -2031,6 +2061,7 @@ export const ED_DATA = [
         members: [PROFILES.SDP.CHEE_SOON_JUAN],
         confirmed: true,
         sample: 43,
+        actual: 45.2,
       },
     ],
   },
@@ -2065,6 +2096,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.AMY_KHOR],
       confirmed: true,
       sample: 63,
+      actual: 60.98,
     },
     opposition: [
       {
@@ -2072,6 +2104,7 @@ export const ED_DATA = [
         members: [PROFILES.PSP.GIGENE_WONG],
         confirmed: true,
         sample: 37,
+        actual: 39.02,
       },
     ],
   },
@@ -2118,6 +2151,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 75,
+      actual: 74.62,
     },
     opposition: [
       {
@@ -2131,6 +2165,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 25,
+        actual: 25.38,
       },
     ],
   },
@@ -2177,6 +2212,7 @@ export const ED_DATA = [
       confirmed: true,
       manifesto: 'https://drive.google.com/file/d/1a1VHrDxUBkLZtrCvlmZ8VXaDYcL0V_Dv/view',
       sample: 67,
+      actual: 67.26,
     },
     opposition: [
       {
@@ -2189,6 +2225,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 33,
+        actual: 32.74,
       },
     ],
   },
@@ -2235,6 +2272,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 67,
+      actual: 66.41,
     },
     opposition: [
       {
@@ -2248,6 +2286,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 33,
+        actual: 33.59,
       },
     ],
   },
@@ -2271,6 +2310,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 47,
+      actual: 47.87,
     },
     opposition: [
       {
@@ -2283,6 +2323,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 53,
+        actual: 52.13,
       },
     ],
   },
@@ -2329,6 +2370,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 60,
+      actual: 59.93,
     },
     opposition: [
       {
@@ -2342,6 +2384,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 40,
+        actual: 40.07,
       },
     ],
   },
@@ -2360,6 +2403,7 @@ export const ED_DATA = [
       members: [PROFILES.PAP.HENRY_KWEK],
       confirmed: true,
       sample: 68,
+      actual: 62.97,
     },
     opposition: [
       {
@@ -2367,6 +2411,7 @@ export const ED_DATA = [
         members: [PROFILES.PSP.KUMARAN_PILLAI],
         confirmed: true,
         sample: 32,
+        actual: 37.03,
       },
     ],
   },
@@ -2404,6 +2449,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 64,
+      actual: 63.18,
     },
     opposition: [
       {
@@ -2416,6 +2462,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 36,
+        actual: 36.82,
       },
     ],
   },
@@ -2462,6 +2509,7 @@ export const ED_DATA = [
       ],
       confirmed: true,
       sample: 69,
+      actual: 67.29,
     },
     opposition: [
       {
@@ -2475,6 +2523,7 @@ export const ED_DATA = [
         ],
         confirmed: true,
         sample: 31,
+        actual: 32.71,
       },
     ],
   },
